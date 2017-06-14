@@ -688,7 +688,7 @@ a {
   position: relative;
   width: 100%;
   overflow: hidden;
-  min-height: 250px;
+  min-height: 200px;
   font-size: 0.875rem;
 }
 #header .switch-area .switch-wrap {
