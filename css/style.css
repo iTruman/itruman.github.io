@@ -571,14 +571,13 @@ a {
 #header .profilepic {
   text-align: center;
   display: block;
-  border: 5px solid #fff;
+  border: 3px solid #fff;
   border-radius: 50%;
   width: 128px;
   height: 128px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  background: #88acdb;
   -webkit-box-orient: horizontal;
   -webkit-box-pack: center;
   -webkit-box-align: center;
@@ -600,10 +599,9 @@ a {
   -webkit-animation-delay: 0.3s;
 }
 #header .profilepic:hover {
-  background: #fff;
-  border: 5px solid #88acdb;
-  -webkit-box-shadow: 0 0 1.5em #88acdb;
-  box-shadow: 0 0 1.5em #88acdb;
+  border: 3px solid #88acdb;
+  -webkit-box-shadow: 0 0 1em #add8e6;
+  box-shadow: 0 0 1em #add8e6;
   -webkit-animation: profilepic 0.15s linear infinite alternate;
   -moz-animation: profilepic 0.15s linear infinite alternate;
   -ms-animation: profilepic 0.15s linear infinite alternate;
@@ -688,7 +686,7 @@ a {
   position: relative;
   width: 100%;
   overflow: hidden;
-  min-height: 200px;
+  min-height: 210px;
   font-size: 0.875rem;
 }
 #header .switch-area .switch-wrap {
@@ -1332,13 +1330,15 @@ color
   transition: color 0.3s;
 }
 .article-title:hover {
-  color: #b0a0aa;
+  color: #000;
 }
 .article-inner {
   position: relative;
   margin-bottom: 0px;
   padding-bottom: 0.5em;
   word-break: break-word;
+  border-top-right-radius: 20%;
+  border-right: 1px solid #d3d3d3;
   -webkit-box-shadow: 3px 2px 8px rgba(0,0,0,0.07);
   box-shadow: 3px 2px 8px rgba(0,0,0,0.07);
 }
