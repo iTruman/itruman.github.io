@@ -231,11 +231,10 @@ a {
   margin: 3px;
 }
 #container .left-col {
-  background: rgba(255,255,255,0.85);
-  border-right: 2px solid #808080;
-  width: 270px;
+  background: #ebebeb;
+  opacity: 0.9;
+  width: 300px;
   position: fixed;
-  opacity: 1;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -ms-transition: all 0.2s ease-in;
@@ -243,28 +242,24 @@ a {
   height: 100%;
   overflow-y: auto;
 }
-#container .left-col .overlay {
-  width: 100%;
-  height: 180px;
-  background-color: #000;
-  position: absolute;
-  opacity: 0.7;
-}
 #container .left-col .intrude-less {
-  width: 76%;
+  width: 90%;
   text-align: center;
-  margin: 112px auto 0;
+  margin: 50px auto 0;
 }
 #container .left-col li:hover {
-  background: none;
+  background: #ebebeb;
+  opacity: 0.9;
   font-weight: bold;
+  color: #000;
+  border-radius: 10% 40% 40% 10%;
 }
 #container .mid-col {
   position: absolute;
   right: 0;
   min-height: 100%;
   background: rgba(255,255,255,0.8);
-  left: 270px;
+  left: 300px;
   width: auto;
 }
 @media screen and (max-width: 800px) {
@@ -571,7 +566,7 @@ a {
 #header .profilepic {
   text-align: center;
   display: block;
-  border: 3px solid #fff;
+  border: 1px dashed #ccc;
   border-radius: 50%;
   width: 128px;
   height: 128px;
@@ -599,9 +594,6 @@ a {
   -webkit-animation-delay: 0.3s;
 }
 #header .profilepic:hover {
-  border: 3px solid #88acdb;
-  -webkit-box-shadow: 0 0 1em #add8e6;
-  box-shadow: 0 0 1em #add8e6;
   -webkit-animation: profilepic 0.15s linear infinite alternate;
   -moz-animation: profilepic 0.15s linear infinite alternate;
   -ms-animation: profilepic 0.15s linear infinite alternate;
@@ -680,7 +672,7 @@ a {
 }
 #header .header-menu li a {
   font-size: 0.875rem;
-  min-width: 270px;
+  min-width: 300px;
 }
 #header .switch-area {
   position: relative;
@@ -1026,7 +1018,7 @@ a {
 }
 .hide-labels {
   position: fixed;
-  left: 348px;
+  left: 378px;
   top: 30px;
   padding: 1px;
   border: none;
@@ -1046,7 +1038,7 @@ a {
   opacity: 1;
 }
 #post-nav-button {
-  left: 270px;
+  left: 300px;
   top: 61.8%;
 }
 #post-nav-button a {
@@ -1678,7 +1670,7 @@ li:hover {
 }
 #tocButton {
   position: fixed;
-  left: 190px;
+  left: 220px;
   top: 385px;
   font-size: 0.9em;
   font-weight: bold;
@@ -1695,7 +1687,7 @@ li:hover {
 }
 .toc-article {
   position: fixed;
-  width: 200px;
+  width: 230px;
   top: 378px;
   bottom: 1em;
   left: 0;
@@ -2329,7 +2321,7 @@ pre .javascript .function {
 }
 #footer .visit #site-visit:hover .fa,
 #footer .visit #page-visit:hover .fa {
-  color: #333;
+  color: #000;
 }
 .share {
   padding-left: 40px;
