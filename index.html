@@ -73,7 +73,7 @@
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
         scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
-        search: undefined
+        search: true
     }
 </script>
 
@@ -85,6 +85,8 @@
     <script> yiliaConfig.rootUrl = "\/";</script>
 
 
+
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56ff76c972fc0cf9"></script>
 
 
 
@@ -107,6 +109,13 @@
         <p class="header-subtitle">路遥知码力,日久见猿心 ..</p>
         
 
+        
+            <form id="search-form">
+            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false" />
+            <i class="fa fa-times" onclick="resetSearch()"></i>
+            </form>
+            <div id="local-search-result"></div>
+            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
         
 
 
@@ -175,9 +184,9 @@
                             
                                 <a class="fa GitHub" href="https://github.com/iTruman" title="GitHub"></a>
                             
-                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
-                            
                                 <a class="fa 知乎" href="https://www.zhihu.com/explore" title="知乎"></a>
+                            
+                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
                             
                         </ul>
                     </nav>
@@ -263,9 +272,9 @@
                             
                                 <a class="fa GitHub" target="_blank" href="https://github.com/iTruman" title="GitHub"></a>
                             
-                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
-                            
                                 <a class="fa 知乎" target="_blank" href="https://www.zhihu.com/explore" title="知乎"></a>
+                            
+                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
                             
                         </ul>
             </nav>
@@ -274,6 +283,61 @@
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-index1" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/06/20/index1/" class="article-date">
+      <time datetime="2017-06-20T02:25:54.036Z" itemprop="datePublished">2017-06-20</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/06/20/index1/">懒文感想</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="一个码农"><a href="#一个码农" class="headerlink" title="一个码农 .."></a>一个码农 ..</h1>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-blogFirst" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -304,8 +368,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>Welcome to Truman’s blog ..</p>
-
+        
       
     </div>
     

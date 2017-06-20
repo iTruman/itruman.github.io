@@ -15,16 +15,13 @@
 
 
 
-<meta name="description" content="Welcome to Truman’s blog ..">
 <meta property="og:type" content="article">
 <meta property="og:title" content="My First Blog">
 <meta property="og:url" content="https://itruman.github.io/2017/06/14/blogFirst/index.html">
 <meta property="og:site_name" content="末生的私博 ..">
-<meta property="og:description" content="Welcome to Truman’s blog ..">
-<meta property="og:updated_time" content="2017-06-14T10:17:45.464Z">
+<meta property="og:updated_time" content="2017-06-16T03:14:32.886Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="My First Blog">
-<meta name="twitter:description" content="Welcome to Truman’s blog ..">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -72,7 +69,7 @@
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
         scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
-        search: undefined
+        search: true
     }
 </script>
 
@@ -84,6 +81,8 @@
     <script> yiliaConfig.rootUrl = "\/";</script>
 
 
+
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56ff76c972fc0cf9"></script>
 
 
 
@@ -106,6 +105,13 @@
         <p class="header-subtitle">路遥知码力,日久见猿心 ..</p>
         
 
+        
+            <form id="search-form">
+            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false" />
+            <i class="fa fa-times" onclick="resetSearch()"></i>
+            </form>
+            <div id="local-search-result"></div>
+            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
         
 
 
@@ -174,9 +180,9 @@
                             
                                 <a class="fa GitHub" href="https://github.com/iTruman" title="GitHub"></a>
                             
-                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
-                            
                                 <a class="fa 知乎" href="https://www.zhihu.com/explore" title="知乎"></a>
+                            
+                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
                             
                         </ul>
                     </nav>
@@ -262,9 +268,9 @@
                             
                                 <a class="fa GitHub" target="_blank" href="https://github.com/iTruman" title="GitHub"></a>
                             
-                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
-                            
                                 <a class="fa 知乎" target="_blank" href="https://www.zhihu.com/explore" title="知乎"></a>
+                            
+                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
                             
                         </ul>
             </nav>
@@ -308,8 +314,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>Welcome to Truman’s blog ..</p>
-
+        
       
     </div>
     
@@ -320,7 +325,7 @@
         <p><span>本文标题:</span><a href="/2017/06/14/blogFirst/">My First Blog</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Ta叫末生</a></p>
         <p><span>发布时间:</span>2017-06-14, 14:55:01</p>
-        <p><span>最后更新:</span>2017-06-14, 18:17:45</p>
+        <p><span>最后更新:</span>2017-06-16, 11:14:32</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2017/06/14/blogFirst/" title="My First Blog">https://itruman.github.io/2017/06/14/blogFirst/</a>
             <span class="copy-path" data-clipboard-text="原文: https://itruman.github.io/2017/06/14/blogFirst/　　作者: Ta叫末生" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -332,6 +337,17 @@
     </div>
 
 
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2017/06/20/index1/">
+                    懒文感想
+                </a>
+            </div>
+        
+        
+    </nav>
 
   
 </article>
@@ -347,8 +363,8 @@
         .left-col .switch-area {
             display: none;
         }
-        .toc-level-3 i,
-        .toc-level-3 ol {
+        .toc-level-6 i,
+        .toc-level-6 ol {
             display: none !important;
         }
     </style>
@@ -364,21 +380,9 @@
     
 <div class="share">
     
-        <div class="bdsharebuttonbox">
-            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
-            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
-            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
-            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
-            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
-            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
-        </div>
-        <script>
-            window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"My First Blog　| 末生的私博 ..　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
-        </script>
-    
 
+    
+        <div class="addthis_sharing_toolbox"></div>
     
 </div>
 
@@ -389,13 +393,37 @@
 
 
     
+        <section id="comments">
+    <style> aside.comment-bar { margin: auto 30px; }</style>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function(){
+            this.page.url = 'https://itruman.github.io/2017/06/14/blogFirst/';
+            this.page.identifier = '2017/06/14/blogFirst/';
+        };
+        var loadComment = function(){
+            var d = document, s = d.createElement('script');
+            s.src = '//itruman.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        }
+    </script>
+    
+    <script> loadComment(); </script>
+
+</section>
+
+
+    
 
 
 
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2017/06/20/index1/" title="上一篇: 懒文感想">
+                <i class="fa fa-angle-left"></i>
+            </a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
@@ -405,7 +433,7 @@
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/06/14/blogFirst/">My First Blog</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/06/20/index1/">懒文感想</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/14/blogFirst/">My First Blog</a></li></ul>
 
 
 

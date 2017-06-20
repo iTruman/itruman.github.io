@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>末生的私博 ..</title>
+  <subtitle>路遥知码力,日久见猿心 ..</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://itruman.github.io/"/>
+  <updated>2017-06-20T02:25:55.411Z</updated>
+  <id>https://itruman.github.io/</id>
+  
+  <author>
+    <name>Ta叫末生</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>懒文感想</title>
+    <link href="https://itruman.github.io/2017/06/20/index1/"/>
+    <id>https://itruman.github.io/2017/06/20/index1/</id>
+    <published>2017-06-20T02:25:54.036Z</published>
+    <updated>2017-06-20T02:25:55.411Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一个码农"><a href="#一个码农" class="headerlink" title="一个码农 .."></a>一个码农 ..</h1>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;一个码农&quot;&gt;&lt;a href=&quot;#一个码农&quot; class=&quot;headerlink&quot; title=&quot;一个码农 ..&quot;&gt;&lt;/a&gt;一个码农 ..&lt;/h1&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>My First Blog</title>
+    <link href="https://itruman.github.io/2017/06/14/blogFirst/"/>
+    <id>https://itruman.github.io/2017/06/14/blogFirst/</id>
+    <published>2017-06-14T06:55:01.377Z</published>
+    <updated>2017-06-16T03:14:32.886Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
