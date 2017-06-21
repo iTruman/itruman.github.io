@@ -233,7 +233,7 @@ a {
 #container .left-col {
   background: #ebebeb;
   opacity: 0.9;
-  width: 300px;
+  width: 290px;
   position: fixed;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
@@ -251,15 +251,15 @@ a {
   background: #ebebeb;
   opacity: 0.9;
   font-weight: bold;
-  color: #000;
-  border-radius: 10% 40% 40% 10%;
+  color: #030303;
+  border-radius: 50%;
 }
 #container .mid-col {
   position: absolute;
   right: 0;
   min-height: 100%;
   background: rgba(255,255,255,0.8);
-  left: 300px;
+  left: 290px;
   width: auto;
 }
 @media screen and (max-width: 800px) {
@@ -344,7 +344,7 @@ a {
   #container .article .article-title {
     display: block;
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
   }
   #container .article .article-meta {
@@ -509,7 +509,7 @@ a {
     right: 1.2em;
   }
   #container .scroll li {
-    font-size: 1.7em;
+    font-size: 1em;
   }
   #container .hide-labels {
     z-index: 100;
@@ -672,7 +672,7 @@ a {
 }
 #header .header-menu li a {
   font-size: 0.875rem;
-  min-width: 300px;
+  min-width: 290px;
 }
 #header .switch-area {
   position: relative;
@@ -1018,7 +1018,7 @@ a {
 }
 .hide-labels {
   position: fixed;
-  left: 378px;
+  left: 368px;
   top: 30px;
   padding: 1px;
   border: none;
@@ -1038,7 +1038,7 @@ a {
   opacity: 1;
 }
 #post-nav-button {
-  left: 300px;
+  left: 290px;
   top: 61.8%;
 }
 #post-nav-button a {
@@ -1670,7 +1670,7 @@ li:hover {
 }
 #tocButton {
   position: fixed;
-  left: 220px;
+  left: 210px;
   top: 385px;
   font-size: 0.9em;
   font-weight: bold;
@@ -1687,7 +1687,7 @@ li:hover {
 }
 .toc-article {
   position: fixed;
-  width: 230px;
+  width: 220px;
   top: 378px;
   bottom: 1em;
   left: 0;
@@ -2891,7 +2891,7 @@ pre .javascript .function {
   display: -ms-flexbox;
   display: box;
   display: flex;
-  width: 100%;
+  width: 97%;
   height: 100%;
   position: relative;
   color: #ccc;
