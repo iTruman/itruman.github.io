@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>末生的私博 ..</title>
   <subtitle>路遥知码力,日久见猿心 ..</subtitle>
-  <link href="/atom.xml" rel="self"/>
+  <link href="/Mainpage/index.html/atom.xml" rel="self"/>
   
   <link href="https://itruman.github.io/"/>
   <updated>2017-06-21T09:12:48.964Z</updated>
