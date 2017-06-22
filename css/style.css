@@ -3005,8 +3005,10 @@ pre .javascript .function {
   box-shadow: 0 0 6px rgba(0,0,0,0.25);
 }
 #local-search-result {
-  margin: auto -12% auto -6%;
-  font-size: 0.9rem;
+  position: absolute;
+  overflow-y: hidden;
+  margin: auto -6% auto 0;
+  font-size: 0.8rem;
   text-align: left;
   word-break: break-all;
 }
