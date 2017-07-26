@@ -286,8 +286,8 @@
     <article id="post-Nginx" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/07/25/Nginx/" class="article-date">
-      <time datetime="2017-07-24T16:00:00.000Z" itemprop="datePublished">2017-07-25</time>
+      <a href="/2017/07/27/Nginx/" class="article-date">
+      <time datetime="2017-07-26T16:00:00.000Z" itemprop="datePublished">2017-07-27</time>
 </a>
 
 
@@ -302,7 +302,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/25/Nginx/">Nginx简易配置(Windows)</a>
+      <a class="article-title" href="/2017/07/27/Nginx/">Nginx简易配置(Windows)</a>
     </h1>
   
 
@@ -312,9 +312,30 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h4 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h4><p>&emsp;&emsp;<a href="http://nginx.org" target="_blank" rel="external">Nginx(engine x)</a>是一个高性能的HTTP和反向代理服务器，也是一个IMAP/POP3/SMTP服务器。<a href="https://github.com/nginx/nginx.git" target="_blank" rel="external">这里</a>是Nginx在GitHub上的源码。Nginx的功能很强大，不仅可以作为静态HTTP服务器、反向代理服务器还可以做负载均衡、虚拟主机和<a href="https://baike.baidu.com/item/fastcgi/10880685?fr=aladdin" target="_blank" rel="external">FastCGI</a>。</p>
-<h4 id="Nginx配置-Windows"><a href="#Nginx配置-Windows" class="headerlink" title="Nginx配置(Windows)"></a>Nginx配置(Windows)</h4><p>1.下载Nginx：<br>&emsp;&emsp;选择自己需要的版本进入<a href="http://nginx.org/en/download.html" target="_blank" rel="external">官网</a>下载Nginx。<br><img src=""></p>
-<p>2.解压Nginx：<br>&emsp;&emsp;将下载好的压缩包解压至你想存放Nginx的磁盘分区或者文件夹内。如图，我把Nignx解压到C盘的Soft文件夹内。<br><img src="/img/"><br>3.启动测试：<br>&emsp;&emsp;进入Nginx文件夹内，双击Nginx.exe即可启动Nginx。<br><img src="/img/NginxStart.png"><br>4.配置路径：<br>&emsp;&emsp;打开文件夹中的<br><img src="/img/NginxFix.png"></p>
+        <h3 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h3><p>&emsp;&emsp;<a href="http://nginx.org" target="_blank" rel="external"><strong>Nginx(engine x) </strong></a>是一个高性能的HTTP和反向代理服务器，也是一个IMAP/POP3/SMTP服务器。<a href="https://github.com/nginx/nginx.git" target="_blank" rel="external">这里</a>是Nginx在GitHub上的源码。Nginx的功能很强大，不仅可以作为静态HTTP服务器、反向代理服务器还可以做负载均衡、虚拟主机和<a href="https://baike.baidu.com/item/fastcgi/10880685?fr=aladdin" target="_blank" rel="external"> FastCGI</a>。本文记录的是简单<strong><strong>静态HTTP服务器</strong></strong>的配置。</p>
+<h3 id="Nginx配置-Windows"><a href="#Nginx配置-Windows" class="headerlink" title="Nginx配置(Windows)"></a>Nginx配置(Windows)</h3><p></p><h4>1.下载Nginx：</h4><br>&emsp;&emsp;选择自己需要的版本进入<a href="http://nginx.org/en/download.html" target="_blank" rel="external"><strong> 官网 </strong></a>下载Nginx。<br><img src="/img/NginxDownload.png" title="Nginx下载" style="display:inline-block;width: 50%;height: 50%;"><p></p>
+<p></p><h4>2.解压Nginx：</h4><br>&emsp;&emsp;将下载好的压缩包解压至你想存放Nginx的磁盘分区或者文件夹内。如图，我把Nignx解压到C盘的Soft文件夹内。<br><img src="/img/NginxUnzip.png" title="解压Nginx"><p></p>
+<p></p><h4>3.启动测试：</h4><br>&emsp;&emsp;进入Nginx文件夹内，双击Nginx.exe即可启动Nginx,打开浏览器输入：<a href="http://localhost/" target="_blank" rel="external">http://localhost</a>,看到Welcome to nginx!页面，Nginx启动成功。<p></p>
+<div style="display: flex;"><br>    <img src="/img/NginxStart.png" title="Nginx启动" style="flex: 1;"><strong>-&gt;</strong><br>    <img src="/img/NginxWelcome.png" title="Welcome to nginx !" style="flex: 1"><br></div>
+
+<p>&emsp;&emsp;Nginx相关命令(打开CMD,切换到Nginx所在目录)<br>&emsp;&emsp;&emsp;&emsp;1.启动：start nginx<br>&emsp;&emsp;&emsp;&emsp;2.停止：nginx -s stop<br>&emsp;&emsp;&emsp;&emsp;3.重启：nginx -s reload<br>&emsp;&emsp;&emsp;&emsp;4.退出：nginx -s quit</p>
+<p></p><h4>4.配置路径：</h4><br>&emsp;&emsp;打开文件夹中的nginx.conf文件，可以使用Sublime Text之类的文本编辑器打开，不推荐记事本。<p></p>
+<p><div style="display: flex;"><br>    <img src="/img/NginxFix.png" title="配置路径" style="flex: 1;"><strong>-&gt;</strong><br>    <img src="/img/NginxConf.png" title="配置路径" style="flex: 1;"><br></div></p>
+<pre>
+    location / {  
+            root  html;  
+            index  index.html index.htm;  
+        } 
+</pre>
+<strong>将初始root目录👆更改到你的项目目录👇</strong>
+<pre>
+    location / {  
+            root   D:/h4;  
+            index  index.php index.html index.htm;  
+        }  
+</pre>
+
+<h3 id="拓展链接"><a href="#拓展链接" class="headerlink" title="拓展链接"></a>拓展链接</h3><p>&emsp;&emsp;&emsp;👉<a href="http://blog.csdn.net/tdcqfyl/article/details/51992758" target="_blank" rel="external">Nginx简单配置</a><br>&emsp;&emsp;&emsp;👉<a href="http://blog.csdn.net/tjcyjd/article/details/50695922" target="_blank" rel="external">Nginx配置文件详解</a><br>&emsp;&emsp;&emsp;👉<a href="https://segmentfault.com/a/1190000002797601" target="_blank" rel="external">Nginx服务器安装及配置文件详解</a></p>
 
       
     </div>
@@ -329,7 +350,7 @@
 
       
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Nginx/">Nginx</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Nginx/">Nginx</a></li></ul>
     </div>
 
       
