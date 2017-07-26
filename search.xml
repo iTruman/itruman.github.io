@@ -9,11 +9,11 @@
 <h3 id="Nginx配置-Windows"><a href="#Nginx配置-Windows" class="headerlink" title="Nginx配置(Windows)"></a>Nginx配置(Windows)</h3><p></p><h4>1.下载Nginx：</h4><br>&emsp;&emsp;选择自己需要的版本进入<a href="http://nginx.org/en/download.html" target="_blank" rel="external"><strong> 官网 </strong></a>下载Nginx。<br><img src="/img/NginxDownload.png" title="Nginx下载" style="display:inline-block;width: 50%;height: 50%;"><p></p>
 <p></p><h4>2.解压Nginx：</h4><br>&emsp;&emsp;将下载好的压缩包解压至你想存放Nginx的磁盘分区或者文件夹内。如图，我把Nignx解压到C盘的Soft文件夹内。<br><img src="/img/NginxUnzip.png" title="解压Nginx"><p></p>
 <p></p><h4>3.启动测试：</h4><br>&emsp;&emsp;进入Nginx文件夹内，双击Nginx.exe即可启动Nginx,打开浏览器输入：<a href="http://localhost/" target="_blank" rel="external">http://localhost</a>,看到Welcome to nginx!页面，Nginx启动成功。<p></p>
-<div style="display: flex;"><br>    <img src="/img/NginxStart.png" title="Nginx启动" style="flex: 1;"><strong>-&gt;</strong><br>    <img src="/img/NginxWelcome.png" title="Welcome to nginx !" style="flex: 1"><br></div>
+<div style="display: flex;"><br>    <img src="/img/NginxStart.png" title="Nginx启动" style="flex: 1;"><strong> &gt;</strong><br>    <img src="/img/NginxWelcome.png" title="Welcome to nginx !" style="flex: 1"><br></div>
 
 <p>&emsp;&emsp;Nginx相关命令(打开CMD,切换到Nginx所在目录)<br>&emsp;&emsp;&emsp;&emsp;1.启动：start nginx<br>&emsp;&emsp;&emsp;&emsp;2.停止：nginx -s stop<br>&emsp;&emsp;&emsp;&emsp;3.重启：nginx -s reload<br>&emsp;&emsp;&emsp;&emsp;4.退出：nginx -s quit</p>
 <p></p><h4>4.配置路径：</h4><br>&emsp;&emsp;打开文件夹中的nginx.conf文件，可以使用Sublime Text之类的文本编辑器打开，不推荐记事本。<p></p>
-<p><div style="display: flex;"><br>    <img src="/img/NginxFix.png" title="配置路径" style="flex: 1;"><strong>-&gt;</strong><br>    <img src="/img/NginxConf.png" title="配置路径" style="flex: 1;"><br></div></p>
+<p><div style="display: flex;"><br>    <img src="/img/NginxFix.png" title="配置路径" style="flex: 1;"><strong> &gt;</strong><br>    <img src="/img/NginxConf.png" title="配置路径" style="flex: 1;"><br></div></p>
 <pre>
     location / {  
             root  html;  
