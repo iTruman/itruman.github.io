@@ -5,7 +5,11 @@
     <entry>
       <title><![CDATA[Nginx简易配置(Windows)]]></title>
       <url>/2017/07/27/Nginx/</url>
-      <content type="html"><![CDATA[<h3 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h3><p>&emsp;&emsp;<a href="http://nginx.org" target="_blank" rel="external"><strong>Nginx(engine x) </strong></a>是一个高性能的HTTP和反向代理服务器，也是一个IMAP/POP3/SMTP服务器。<a href="https://github.com/nginx/nginx.git" target="_blank" rel="external">这里</a>是Nginx在GitHub上的源码。Nginx的功能很强大，不仅可以作为静态HTTP服务器、反向代理服务器还可以做负载均衡、虚拟主机和<a href="https://baike.baidu.com/item/fastcgi/10880685?fr=aladdin" target="_blank" rel="external"> FastCGI</a>。本文记录的是简单<strong><strong>静态HTTP服务器</strong></strong>的配置。</p>
+      <content type="html"><![CDATA[<p><excerpt in="" index="" |="" 首页摘要=""><br><a id="more"></a></excerpt></p>
+<the rest="" of="" contents="" |="" 余下全文="">
+
+
+<h3 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h3><p>&emsp;&emsp;<a href="http://nginx.org" target="_blank" rel="external"><strong>Nginx(engine x) </strong></a>是一个高性能的HTTP和反向代理服务器，也是一个IMAP/POP3/SMTP服务器。<a href="https://github.com/nginx/nginx.git" target="_blank" rel="external">这里</a>是Nginx在GitHub上的源码。Nginx的功能很强大，不仅可以作为静态HTTP服务器、反向代理服务器还可以做负载均衡、虚拟主机和<a href="https://baike.baidu.com/item/fastcgi/10880685?fr=aladdin" target="_blank" rel="external"> FastCGI</a>。本文记录的是简单<strong><strong>静态HTTP服务器</strong></strong>的配置。</p>
 <h3 id="Nginx配置-Windows"><a href="#Nginx配置-Windows" class="headerlink" title="Nginx配置(Windows)"></a>Nginx配置(Windows)</h3><p></p><h4>1.下载Nginx：</h4><br>&emsp;&emsp;选择自己需要的版本进入<a href="http://nginx.org/en/download.html" target="_blank" rel="external"><strong> 官网 </strong></a>下载Nginx。<br><img src="/img/NginxDownload.png" title="Nginx下载" style="display:inline-block;width: 50%;height: 50%;"><p></p>
 <p></p><h4>2.解压Nginx：</h4><br>&emsp;&emsp;将下载好的压缩包解压至你想存放Nginx的磁盘分区或者文件夹内。如图，我把Nignx解压到C盘的Soft文件夹内。<br><img src="/img/NginxUnzip.png" title="解压Nginx"><p></p>
 <p></p><h4>3.启动测试：</h4><br>&emsp;&emsp;进入Nginx文件夹内，双击Nginx.exe即可启动Nginx,打开浏览器输入：<a href="http://localhost/" target="_blank" rel="external">http://localhost</a>,看到Welcome to nginx!页面，Nginx启动成功。<p></p>
@@ -29,7 +33,7 @@
 </pre>
 
 <h3 id="拓展链接"><a href="#拓展链接" class="headerlink" title="拓展链接"></a>拓展链接</h3><p>&emsp;&emsp;&emsp;👉<a href="http://blog.csdn.net/tdcqfyl/article/details/51992758" target="_blank" rel="external">Nginx简单配置</a><br>&emsp;&emsp;&emsp;👉<a href="http://blog.csdn.net/tjcyjd/article/details/50695922" target="_blank" rel="external">Nginx配置文件详解</a><br>&emsp;&emsp;&emsp;👉<a href="https://segmentfault.com/a/1190000002797601" target="_blank" rel="external">Nginx服务器安装及配置文件详解</a></p>
-]]></content>
+</the>]]></content>
       
         <categories>
             
@@ -49,7 +53,10 @@
     <entry>
       <title><![CDATA[致三年后的你]]></title>
       <url>/2017/07/03/%E8%87%B4%E4%B8%89%E5%B9%B4%E5%90%8E%E7%9A%84%E4%BD%A0/</url>
-      <content type="html"><![CDATA[<p>&emsp;&emsp;你好，首先恭喜你，还有几天就要毕业离校；其次祝福你，将要真正的踏入社会；去奋斗你想要的样子。</p>
+      <content type="html"><![CDATA[<p><excerpt in="" index="" |="" 首页摘要=""><br><a id="more"></a></excerpt></p>
+<the rest="" of="" contents="" |="" 余下全文="">
+
+<p>&emsp;&emsp;你好，首先恭喜你，还有几天就要毕业离校；其次祝福你，将要真正的踏入社会；去奋斗你想要的样子。</p>
 <p>&emsp;&emsp;如果你看到了，请确保你有27(这一年你27，也是你最喜欢的两个数字)分钟的时间，认真地看下去，否则请关闭，该干嘛干嘛去，改日再看。</p>
 <p>&emsp;&emsp;未来的你和现在的我都明白:时光匆匆，往日不复。看到这里你会不会想起未来三年中的我是什么样子。主宰自我拼搏奋进还是形为路人甲乙丙丁？我不知道，但是你知道。因为我不晓未来，你可通过去。但是有一点，你肯定还是喜欢<strong>《光荣》</strong>。点开听听吧。</p>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="86" src="//music.163.com/outchain/player?type=2&id=26562231&auto=0&height=66"></iframe>
@@ -59,7 +66,7 @@
 <p>&emsp;&emsp;想说的挺多，但是说出来的很少，就先这样吧，三年后再看。</p>
 <p>&emsp;&emsp;END：不知道你看完是怎么一个反应，是不是在写博客？</p>
 <p></p><p style="float:right;">2017年</p><div style="clear: both;"></div><p></p>
-]]></content>
+</the>]]></content>
       
         <categories>
             
@@ -81,13 +88,16 @@
     <entry>
       <title><![CDATA[Blog First]]></title>
       <url>/2017/06/21/Blog%20First/</url>
-      <content type="html"><![CDATA[<h3 id="为什么"><a href="#为什么" class="headerlink" title="为什么"></a>为什么</h3><p>&emsp;&emsp;为什么？关于为什么开博客、写博客，最初只是一个突然萌生的想法。在刚去北京的第二个月，我就开始不太能适应在北京的研究生生活。感觉自己再浑浑噩噩地虚度。于是就想着干点什么，只可惜那时候想搭建一个属于自己的博客还不知道用什么方法，便改为写周记，整整的写了半年。现在还在写，只不过从周记渐变为手札。休学后开始工作，我很喜欢前端，但不局限于此。后来发现<a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> + <a href="www.github.com">GitHub</a>。于是正式开工，折腾了好久，就有了<a href="http://itruman.github.io">我的博客</a>。目前还很简陋，巴哥之处还请指教。<br><i style="display:inline-block;width: 90%;height: 20em;margin: 0 5%;background:url(/img/bg01.jpg) no-repeat;background-size:cover;"></i></p>
+      <content type="html"><![CDATA[<p><excerpt in="" index="" |="" 首页摘要=""><br><a id="more"></a></excerpt></p>
+<the rest="" of="" contents="" |="" 余下全文="">
+
+<h3 id="为什么"><a href="#为什么" class="headerlink" title="为什么"></a>为什么</h3><p>&emsp;&emsp;为什么？关于为什么开博客、写博客，最初只是一个突然萌生的想法。在刚去北京的第二个月，我就开始不太能适应在北京的研究生生活。感觉自己再浑浑噩噩地虚度。于是就想着干点什么，只可惜那时候想搭建一个属于自己的博客还不知道用什么方法，便改为写周记，整整的写了半年。现在还在写，只不过从周记渐变为手札。休学后开始工作，我很喜欢前端，但不局限于此。后来发现<a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> + <a href="www.github.com">GitHub</a>。于是正式开工，折腾了好久，就有了<a href="http://itruman.github.io">我的博客</a>。目前还很简陋，巴哥之处还请指教。<br><i style="display:inline-block;width: 90%;height: 20em;margin: 0 5%;background:url(/img/bg01.jpg) no-repeat;background-size:cover;"></i></p>
 <h3 id="是什么"><a href="#是什么" class="headerlink" title="是什么"></a>是什么</h3><p>&emsp;&emsp;是什么？博客是什么这个概念我不是很懂，我理解的大概就是:<strong>博君笑，客来看，不足还请多指教。</strong>尽力吧，让博客有自己的影子。    </p>
 <h3 id="做什么"><a href="#做什么" class="headerlink" title="做什么"></a>做什么</h3><p>&emsp;&emsp;做什么？对，博客能做什么？简单一点，练练打字、写写感想、晒晒旅游、长长技术等等；我想这些都是博客可以做的吧，先从简单的做起，慢慢地做，渐渐地也就Better few than none !(ps:想想好久没有用!了，怀念那个用!疯狂的少年)</p>
 <h3 id="怎么做"><a href="#怎么做" class="headerlink" title="怎么做"></a>怎么做</h3><p>&emsp;&emsp;这真的是一个大问题，这其中还包含了不少的小问题。写博客有别于写高考作文，有如：<strong>梯子不用时请横着放</strong>、<strong>剧本修改谁说了算</strong> 等此等大坑，但，此坑亦不小，<strong><em>先跳为敬</em></strong>。首先的问题就是关于<strong>写</strong>的问题，写博客真的不是那么容易，记得曾经在某知名的网站写过一个技术草博客，之说以说是草博客，是因为仅仅写了但是没写完，固然也没有发出去。这篇博文，也是构思了好久，最后定下了标题，确定了分支，开始慢慢悠悠地写，写博客真的不能着急，不然博文会”<strong>上火</strong>“，然后就”<strong>BooM</strong>“。还有就是用什么写，看了好几种写博文的方法，发现大家 <a href="http://www.appinn.com/markdown/" target="_blank" rel="external">MarkDown</a> 用的比较多，也是一门饶有风趣的语言，当然也想过直接写 <a href="http://html.com/" target="_blank" rel="external">HTML</a>，与此同时也查找了不少工具，如：<a href="http://dillinger.io/" target="_blank" rel="external">Dillinger</a>、<a href="http://www.jianshu.com/" target="_blank" rel="external">简书</a>博客平台、<a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="external">Cmd MarkDown</a>等等，个人觉得 <a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="external">Cmd MarkDown</a> 还是不错的(因为用的还是Windows，强行丢锅微软)，Mac环境下据说(敲黑板，据说，毕竟没有用过Mac) <a href="http://macdown.uranusjr.com/" target="_blank" rel="external">Mac Down</a> 评价不错，还开源免费。这篇用什么写的？当然是凭借强大的 <strong><a href="http://www.sublimetext.com/3" target="_blank" rel="external">Sublime Text 3</a></strong> 外加 <strong>徒手</strong> 了!其次就是<strong>坚持</strong>的问题，如果能像每天晚上坚持睡在床上玩手机一样easy就好多了，这有点头疼，但是尽力吧。不求量，求质(先找个借口)。最后的最后，努力吧，干掉那些<a href="http://baike.baidu.com/link?url=aukvNb58cwMbkKGVsrpPBrxbTA_H-2mDeMzL2S9S1IKLAGuuMD0di4V77uiLsRNv2Yf37CdtzMsPZ_uYVbWVHlCmTQBpvGNYUjTcB8PXWRXYEQTPvg7k3j6J_fvVMmDHWyuMOO7FDN_s6vPFtGcEHq" target="_blank" rel="external">进击的巨人</a>(链接巨长，不信点点看)。</p>
 <h3 id="总总结论"><a href="#总总结论" class="headerlink" title="总总结论"></a>总总结论</h3><p>&emsp;&emsp;找结论？这就是，还有你听了半天的音乐 ..</p>
 <p></p><p style="float:right;">末生</p><div style="clear: both;"></div><p></p>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="86" src="//music.163.com/outchain/player?type=2&id=26598252&auto=0&height=66"></iframe>]]></content>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="86" src="//music.163.com/outchain/player?type=2&id=26598252&auto=0&height=66"></iframe></the>]]></content>
       
         <categories>
             
