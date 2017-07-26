@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content="Ta叫末生" />
+
+
+
+<meta name="description" content="Nginx&amp;emsp;&amp;emsp;Nginx(engine x) 是一个高性能的HTTP和反向代理服务器，也是一个IMAP/POP3/SMTP服务器。这里是Nginx在GitHub上的源码。Nginx的功能很强大，不仅可以作为静态HTTP服务器、反向代理服务器还可以做负载均衡、虚拟主机和 FastCGI。本文记录的是简单静态HTTP服务器的配置。 Nginx配置(Windows)1.下载Nginx">
+<meta name="keywords" content="Nginx">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Nginx简易配置(Windows)">
+<meta property="og:url" content="https://itruman.github.io/2017/07/27/Nginx/index.html">
+<meta property="og:site_name" content="末生的私博 ..">
+<meta property="og:description" content="Nginx&amp;emsp;&amp;emsp;Nginx(engine x) 是一个高性能的HTTP和反向代理服务器，也是一个IMAP/POP3/SMTP服务器。这里是Nginx在GitHub上的源码。Nginx的功能很强大，不仅可以作为静态HTTP服务器、反向代理服务器还可以做负载均衡、虚拟主机和 FastCGI。本文记录的是简单静态HTTP服务器的配置。 Nginx配置(Windows)1.下载Nginx">
+<meta property="og:image" content="https://itruman.github.io/img/NginxDownload.png">
+<meta property="og:image" content="https://itruman.github.io/img/NginxUnzip.png">
+<meta property="og:image" content="https://itruman.github.io/img/NginxStart.png">
+<meta property="og:image" content="https://itruman.github.io/img/NginxWelcome.png">
+<meta property="og:image" content="https://itruman.github.io/img/NginxFix.png">
+<meta property="og:image" content="https://itruman.github.io/img/NginxConf.png">
+<meta property="og:updated_time" content="2017-07-26T03:21:47.289Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Nginx简易配置(Windows)">
+<meta name="twitter:description" content="Nginx&amp;emsp;&amp;emsp;Nginx(engine x) 是一个高性能的HTTP和反向代理服务器，也是一个IMAP/POP3/SMTP服务器。这里是Nginx在GitHub上的源码。Nginx的功能很强大，不仅可以作为静态HTTP服务器、反向代理服务器还可以做负载均衡、虚拟主机和 FastCGI。本文记录的是简单静态HTTP服务器的配置。 Nginx配置(Windows)1.下载Nginx">
+<meta name="twitter:image" content="https://itruman.github.io/img/NginxDownload.png">
+
+<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
+
+
+    <link rel="alternate" href="/atom.xml" title="末生的私博 .." type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>Nginx简易配置(Windows) | 末生的私博 ..</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: false,
+        isPost: true,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: true
+    }
+</script>
+
+
+    <script>
+        yiliaConfig.jquery_ui = [true, "//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js", "//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css"];
+    </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/niconico.png" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">Ta叫末生</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">路遥知码力,日久见猿心 ..</p>
+        
+
+        
+            <form id="search-form">
+                <input type="text" id="local-search-input" name="q" placeholder="search ..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false" />
+                <i class="fa fa-times" onclick="resetSearch()"></i>
+            </form>
+            <div id="local-search-result"></div>
+            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主·页</a></li>
+                        
+                            <li><a href="/archives/">所·有</a></li>
+                        
+                            <li><a href="/tags/">标·签</a></li>
+                        
+                            <li><a href="/About·Me/">末·生</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" href="mailto:liuyumeng0312@qq.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" href="https://github.com/iTruman" title="GitHub"></a>
+                            
+                                <a class="fa 知乎" href="https://www.zhihu.com/explore" title="知乎"></a>
+                            
+                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                    
+                      <a class="main-nav-link switch-friends-link" href="#">HTML</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="#">CSS</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="#">JavaScript</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="#">Web</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="#">Hexo</a>
+                    
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://www.github.com/">GitHub</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">一个七彩像素点 ..</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">Ta叫末生</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/niconico.png" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">Ta叫末生</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">路遥知码力,日久见猿心 ..</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主·页</a></li>
+                
+                    <li><a href="/archives/">所·有</a></li>
+                
+                    <li><a href="/tags/">标·签</a></li>
+                
+                    <li><a href="/About·Me/">末·生</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" target="_blank" href="mailto:liuyumeng0312@qq.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="https://github.com/iTruman" title="GitHub"></a>
+                            
+                                <a class="fa 知乎" target="_blank" href="https://www.zhihu.com/explore" title="知乎"></a>
+                            
+                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+</nav>
+      <div class="body-wrap"><article id="post-Nginx" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/07/27/Nginx/" class="article-date">
+      <time datetime="2017-07-26T16:00:00.000Z" itemprop="datePublished">2017-07-27</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Nginx简易配置(Windows)
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/FrontEnd/">FrontEnd</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Nginx/">Nginx</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h3><p>&emsp;&emsp;<a href="http://nginx.org" target="_blank" rel="external"><strong>Nginx(engine x) </strong></a>是一个高性能的HTTP和反向代理服务器，也是一个IMAP/POP3/SMTP服务器。<a href="https://github.com/nginx/nginx.git" target="_blank" rel="external">这里</a>是Nginx在GitHub上的源码。Nginx的功能很强大，不仅可以作为静态HTTP服务器、反向代理服务器还可以做负载均衡、虚拟主机和<a href="https://baike.baidu.com/item/fastcgi/10880685?fr=aladdin" target="_blank" rel="external"> FastCGI</a>。本文记录的是简单<strong><strong>静态HTTP服务器</strong></strong>的配置。</p>
+<h3 id="Nginx配置-Windows"><a href="#Nginx配置-Windows" class="headerlink" title="Nginx配置(Windows)"></a>Nginx配置(Windows)</h3><p></p><h4>1.下载Nginx：</h4><br>&emsp;&emsp;选择自己需要的版本进入<a href="http://nginx.org/en/download.html" target="_blank" rel="external"><strong> 官网 </strong></a>下载Nginx。<br><img src="/img/NginxDownload.png" title="Nginx下载" style="display:inline-block;width: 50%;height: 50%;"><p></p>
+<p></p><h4>2.解压Nginx：</h4><br>&emsp;&emsp;将下载好的压缩包解压至你想存放Nginx的磁盘分区或者文件夹内。如图，我把Nignx解压到C盘的Soft文件夹内。<br><img src="/img/NginxUnzip.png" title="解压Nginx"><p></p>
+<p></p><h4>3.启动测试：</h4><br>&emsp;&emsp;进入Nginx文件夹内，双击Nginx.exe即可启动Nginx,打开浏览器输入：<a href="http://localhost/" target="_blank" rel="external">http://localhost</a>,看到Welcome to nginx!页面，Nginx启动成功。<p></p>
+<div style="display: flex;"><br>    <img src="/img/NginxStart.png" title="Nginx启动" style="flex: 1;"><strong> &gt;</strong><br>    <img src="/img/NginxWelcome.png" title="Welcome to nginx !" style="flex: 1"><br></div>
+
+<p>&emsp;&emsp;Nginx相关命令(打开CMD,切换到Nginx所在目录)<br>&emsp;&emsp;&emsp;&emsp;1.启动：start nginx<br>&emsp;&emsp;&emsp;&emsp;2.停止：nginx -s stop<br>&emsp;&emsp;&emsp;&emsp;3.重启：nginx -s reload<br>&emsp;&emsp;&emsp;&emsp;4.退出：nginx -s quit</p>
+<p></p><h4>4.配置路径：</h4><br>&emsp;&emsp;打开文件夹中的nginx.conf文件，可以使用Sublime Text之类的文本编辑器打开，不推荐记事本。<p></p>
+<p><div style="display: flex;"><br>    <img src="/img/NginxFix.png" title="配置路径" style="flex: 1;"><strong> &gt;</strong><br>    <img src="/img/NginxConf.png" title="配置路径" style="flex: 1;"><br></div></p>
+<pre>
+    location / {  
+            root  html;  
+            index  index.html index.htm;  
+        } 
+</pre>
+<strong>将初始root目录👆更改到你的项目目录👇</strong>
+<pre>
+    location / {  
+            root   D:/h4;  
+            index  index.php index.html index.htm;  
+        }  
+</pre>
+
+<h3 id="拓展链接"><a href="#拓展链接" class="headerlink" title="拓展链接"></a>拓展链接</h3><p>&emsp;&emsp;&emsp;👉<a href="http://blog.csdn.net/tdcqfyl/article/details/51992758" target="_blank" rel="external">Nginx简单配置</a><br>&emsp;&emsp;&emsp;👉<a href="http://blog.csdn.net/tjcyjd/article/details/50695922" target="_blank" rel="external">Nginx配置文件详解</a><br>&emsp;&emsp;&emsp;👉<a href="https://segmentfault.com/a/1190000002797601" target="_blank" rel="external">Nginx服务器安装及配置文件详解</a></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2017/07/27/Nginx/">Nginx简易配置(Windows)</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">Ta叫末生</a></p>
+        <p><span>发布时间:</span>2017-07-27, 00:00:00</p>
+        <p><span>最后更新:</span>2017-07-26, 11:21:47</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2017/07/27/Nginx/" title="Nginx简易配置(Windows)">https://itruman.github.io/2017/07/27/Nginx/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://itruman.github.io/2017/07/27/Nginx/　　作者: Ta叫末生" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2017/07/03/致三年后的你/">
+                    致三年后的你
+                </a>
+            </div>
+        
+    </nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Nginx"><span class="toc-number">1.</span> <span class="toc-text">Nginx</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Nginx配置-Windows"><span class="toc-number">2.</span> <span class="toc-text">Nginx配置(Windows)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">2.1.</span> <span class="toc-text">1.下载Nginx：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">2.2.</span> <span class="toc-text">2.解压Nginx：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">2.3.</span> <span class="toc-text">3.启动测试：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">2.4.</span> <span class="toc-text">4.配置路径：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#拓展链接"><span class="toc-number">3.</span> <span class="toc-text">拓展链接</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-6 i,
+        .toc-level-6 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"Nginx简易配置(Windows)　| 末生的私博 ..　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
+
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2017/07/03/致三年后的你/" title="下一篇: 致三年后的你">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/07/27/Nginx/">Nginx简易配置(Windows)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/07/03/致三年后的你/">致三年后的你</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/21/Blog First/">Blog First</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2017 Ta叫末生
+            </div>
+
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> Modified by <a href="#">Truman</a> ..
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+            
+            
+            
+            
+            
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+
+    <script>
+        var originTitle = document.title;
+        var titleTime;
+        document.addEventListener("visibilitychange", function() {
+            if (document.hidden) {
+                document.title = "Vanishing | " + originTitle;
+                clearTimeout(titleTime);
+            }
+            else {
+                document.title = "Appearing | " + originTitle;
+                titleTime = setTimeout(function() {
+                    document.title = originTitle;
+                }, 2000);
+            }
+        })
+    </script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>
