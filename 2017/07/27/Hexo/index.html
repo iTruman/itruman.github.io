@@ -22,7 +22,9 @@
 <meta property="og:site_name" content="末生的私博 ..">
 <meta property="og:image" content="https://itruman.github.io/img/GitHubNew1.png">
 <meta property="og:image" content="https://itruman.github.io/img/GitHubNew2.png">
-<meta property="og:updated_time" content="2017-07-27T09:26:45.453Z">
+<meta property="og:image" content="https://itruman.github.io/img/HexoDeploy.png">
+<meta property="og:image" content="https://itruman.github.io/img/HexoDeploy1.png">
+<meta property="og:updated_time" content="2017-07-27T10:12:11.774Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo·GitHub搭建个人博客">
 <meta name="twitter:image" content="https://itruman.github.io/img/GitHubNew1.png">
@@ -149,13 +151,13 @@
                 <div class="tips-box hide">
                     <div class="tips-arrow"></div>
                     <ul class="tips-inner">
-                        <li>菜单</li>
-                        <li>标签</li>
+                        <li>Menu</li>
+                        <li>Tags</li>
                         
-                        <li>友情链接</li>
+                        <li>Friends</li>
                         
                         
-                        <li>关于我</li>
+                        <li>About Me</li>
                         
                     </ul>
                 </div>
@@ -281,7 +283,7 @@
             </nav>
         </header>                
     </div>
-    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+    <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
       <div class="body-wrap"><article id="post-Hexo" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -341,10 +343,16 @@
 <h4 id="👉注册GitHub"><a href="#👉注册GitHub" class="headerlink" title="👉注册GitHub"></a>👉注册GitHub</h4><p>&emsp;&emsp;打开<a href="https://github.com/" target="_blank" rel="external">GitHub官网</a>点击注册。登陆之后新建一个与你用户名对应的Repository，并且命名为：yourusername.github.io。然后给你的GitHub账户<a href="">添加SSH Key</a>，也就是添加你的公钥，至于什么是<a href="http://www.williamlong.info/archives/837.html" target="_blank" rel="external"><strong>公私钥</strong></a>这涉及到密码学的一些知识。如果不会添加SSH Key前面有添加SSH Key的链接，实在不济，可以不添加，改用HTTPS协议来Push你的Hexo内容，后文会讲到如何HTTPS来Push的设置方法。</p>
 <div class="github"><br>    <img class="githubnew" src="/img/GitHubNew1.png" title="新建仓库"><br>    <img src="/img/GitHubNew2.png" title="命名仓库"><br></div>
 
-<h3 id="搭建"><a href="#搭建" class="headerlink" title="搭建"></a>搭建</h3><h4 id="👉Hexo安装-amp-Init"><a href="#👉Hexo安装-amp-Init" class="headerlink" title="👉Hexo安装&amp;Init"></a>👉Hexo安装&amp;Init</h4><p>&emsp;1.Hexo 安装 <br><br>&emsp;&emsp;Node和Git安装完成之后，打开Git Bash,输入如下命令即可安装Hexo<br><figure class="highlight plain"><figcaption><span>install -g hexo</span><a href="/*-g">表示全局安装*/```</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&amp;emsp;2.Hexo Init &lt;br&gt;	</div><div class="line">&amp;emsp;&amp;emsp;可以直接执行init命令到指定目录下，也可以cd到目录下执行init命令。</div></pre></td></tr></table></figure></p>
-<p>hexo init &lt;·folder·&gt; /<em>init 到指定目录下</em>/<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">```</div><div class="line">cd Blog      /*cd 到指定目录，如Blog*/</div><div class="line">hexo init    /*初始化hexo*/</div></pre></td></tr></table></figure></p>
-<h4 id="👉生成、启动、部署"><a href="#👉生成、启动、部署" class="headerlink" title="👉生成、启动、部署"></a>👉生成、启动、部署</h4><p>&emsp;1.生成静态页面<br>在init目录下输入下面命令会生成静态页面，你可以看到在你的目录下多了一个public文件，在此文件夹下可以看到生成的静态页面。在生成之前可以使用clean先清理一下原来的旧文件，该命令会删除public文件。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo clean   /* 清理 */</div><div class="line">hexo g      /* 或 hexo generate */</div></pre></td></tr></table></figure></p>
-<p>&emsp;2.本地浏览启动<br>输入此命令，并在浏览器中打开<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>即可看到文章的预览，看到有人说预览不了，尽量使用高级浏览器预览。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo s   /* 或 hexo server */</div></pre></td></tr></table></figure></p>
+<h3 id="搭建"><a href="#搭建" class="headerlink" title="搭建"></a>搭建</h3><h4 id="👉Hexo安装-amp-Init"><a href="#👉Hexo安装-amp-Init" class="headerlink" title="👉Hexo安装 &amp; Init"></a>👉Hexo安装 &amp; Init</h4><p>&emsp;1.Hexo 安装<br>&emsp;&emsp;Node和Git安装完成之后，打开Git Bash,输入如下命令即可安装Hexo<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo    /*-g 表示全局安装*/</div></pre></td></tr></table></figure></p>
+<p>&emsp;2.Hexo Init<br>&emsp;&emsp;可以直接执行init命令到指定目录下，也可以cd到目录下执行init命令。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init &lt;·folder·&gt; /*init 到指定目录下*/</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd Blog      /*cd 到指定目录，如Blog*/</div><div class="line">hexo init    /*初始化hexo*/</div></pre></td></tr></table></figure>
+<h4 id="👉生成、启动、部署"><a href="#👉生成、启动、部署" class="headerlink" title="👉生成、启动、部署"></a>👉生成、启动、部署</h4><p>&emsp;1.生成静态页面<br>&emsp;&emsp;在init目录下输入下面命令会生成静态页面，你可以看到在你的目录下多了一个public文件，在此文件夹下可以看到生成的静态页面。在生成之前可以使用clean先清理一下原来的旧文件，该命令会删除public文件。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo clean   /* 清理 */</div><div class="line">hexo g      /* 或 hexo generate */</div></pre></td></tr></table></figure></p>
+<p>&emsp;2.本地浏览启动<br>&emsp;&emsp;输入此命令，并在浏览器中打开<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>即可看到文章的预览，看到有人说预览不了，尽量使用高级浏览器预览。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo s   /* 或 hexo server */</div><div class="line"></div><div class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s    /* 便(tou)捷(lan)组合 */</div></pre></td></tr></table></figure></p>
+<p>&emsp;3.部署到GitHub<br>&emsp;&emsp;打开博客文件夹下的_config.yml配置文件，找到最后几行，然后把type改成git(注意分号后面要加空格)，repository填写上你在GitHub上建立的路径。此处有两种写法。<a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">官方配置文档</a><br>&emsp;&emsp;<img src="/img/HexoDeploy.png"><br>&emsp;&emsp;前文配置好SSH Key并且成功添加至GitHub上测试成功的填写使用SSH协议的地址<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: git@github.com:yourusername/yourusername.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
+<p>&emsp;&emsp;没有配置SSH Key的可以填写,<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: https://github.com/yourusername/yourusername.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
+<p>&emsp;&emsp;填写完成之后输入如下命令，之后再Push至GitHub上，部署成功后会有如下图显示。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
+<p>&emsp;&emsp;<img src="/img/HexoDeploy1.png"></p>
+<h4 id="👉撰写文章"><a href="#👉撰写文章" class="headerlink" title="👉撰写文章"></a>👉撰写文章</h4><h3 id="个性化"><a href="#个性化" class="headerlink" title="个性化"></a>个性化</h3><h4 id="👉主题安装"><a href="#👉主题安装" class="headerlink" title="👉主题安装"></a>👉主题安装</h4><h4 id="👉自定义页面"><a href="#👉自定义页面" class="headerlink" title="👉自定义页面"></a>👉自定义页面</h4><h4 id="👉404页面"><a href="#👉404页面" class="headerlink" title="👉404页面"></a>👉404页面</h4><p><a href="http://ibruce.info/2013/11/22/hexo-your-blog/?utm_source=tuicool" target="_blank" rel="external">参考</a></p>
 </the>
       
     </div>
@@ -353,17 +361,17 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2017/07/27/Hexo/">Hexo·GitHub搭建个人博客</a></p>
-        <p><span>文章作者:</span><a href="/" title="回到主页">Ta叫末生</a></p>
-        <p><span>发布时间:</span>2017-07-27, 00:00:00</p>
-        <p><span>最后更新:</span>2017-07-27, 17:26:45</p>
+        <p><span>Title:</span><a href="/2017/07/27/Hexo/">Hexo·GitHub搭建个人博客</a></p>
+        <p><span>Author:</span><a href="/" title="Back to Homepage">Ta叫末生</a></p>
+        <p><span>Created:</span>2017-07-27, 00:00:00</p>
+        <p><span>Updated:</span>2017-07-27, 18:12:11</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2017/07/27/Hexo/" title="Hexo·GitHub搭建个人博客">https://itruman.github.io/2017/07/27/Hexo/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://itruman.github.io/2017/07/27/Hexo/　　作者: Ta叫末生" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>Full URL:</span><a class="post-url" href="/2017/07/27/Hexo/" title="Hexo·GitHub搭建个人博客">https://itruman.github.io/2017/07/27/Hexo/</a>
+            <span class="copy-path" data-clipboard-text="From https://itruman.github.io/2017/07/27/Hexo/　　By Ta叫末生" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
-            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+            <span>License:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"CC BY-NC-SA 4.0"</a> Keep Link &amp; Author if Distribute.
         </p>
     </div>
 
@@ -384,9 +392,9 @@
 </article>
 
     <div id="toc" class="toc-article">
-        <strong class="toc-title">文章目录</strong>
+        <strong class="toc-title">Contents</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#预读"><span class="toc-text">预读</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#准备"><span class="toc-text">准备</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#👉安装Node"><span class="toc-text">👉安装Node</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#👉安装Git"><span class="toc-text">👉安装Git</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#👉注册GitHub"><span class="toc-text">👉注册GitHub</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#搭建"><span class="toc-text">搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#👉Hexo安装-amp-Init"><span class="toc-text">👉Hexo安装&Init</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#👉生成、启动、部署"><span class="toc-text">👉生成、启动、部署</span></a></li></ol></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#预读"><span class="toc-text">预读</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#准备"><span class="toc-text">准备</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#👉安装Node"><span class="toc-text">👉安装Node</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#👉安装Git"><span class="toc-text">👉安装Git</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#👉注册GitHub"><span class="toc-text">👉注册GitHub</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#搭建"><span class="toc-text">搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#👉Hexo安装-amp-Init"><span class="toc-text">👉Hexo安装 & Init</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#👉生成、启动、部署"><span class="toc-text">👉生成、启动、部署</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#👉撰写文章"><span class="toc-text">👉撰写文章</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#个性化"><span class="toc-text">个性化</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#👉主题安装"><span class="toc-text">👉主题安装</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#👉自定义页面"><span class="toc-text">👉自定义页面</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#👉404页面"><span class="toc-text">👉404页面</span></a></li></ol></li></ol>
         
     </div>
     <style>
@@ -400,10 +408,10 @@
         }
     </style>
 
-    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+    <input type="button" id="tocButton" value="Hide"  title="Show or Hide Table of Contents">
 
     <script>
-        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+        yiliaConfig.toc = ["Hide", "Show", !!"false"];
     </script>
 
 
@@ -452,13 +460,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/" title="Back to Homepage"><i class="fa fa-home"></i></a>
         
 
-        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2017/07/27/Nginx/" title="下一篇: Nginx简易配置(Windows)">
+            <a href="/2017/07/27/Nginx/" title="Next: Nginx简易配置(Windows)">
                 <i class="fa fa-angle-right"></i>
             </a>
         
@@ -482,14 +490,14 @@
             </div>
 
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> Modified by <a href="#">Truman</a> ..
+                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo  v3.5">Yelee</a> Modified by <a href="#">Truman</a> ..
             </div>
         </div>
         
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        <span id="site-visit" title="Site Visitors"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
                 
@@ -498,7 +506,7 @@
                 
                 
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        <span id="page-visit"  title="Page Hits"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
                 
@@ -552,9 +560,9 @@ MathJax.Hub.Queue(function() {
 
 
 <div class="scroll" id="scroll">
-    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+    <a href="#" title="Back to Top"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="Comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="Go to Bottom"><i class="fa fa-arrow-down"></i></a>
 </div>
 <script>
     // Open in New Window
