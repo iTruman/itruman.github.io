@@ -3,17 +3,40 @@
   
     
     <entry>
-      <title><![CDATA[Hexo·GitHub 你的博客]]></title>
+      <title><![CDATA[Git安装与使用]]></title>
+      <url>/2017/07/28/Git/</url>
+      <content type="html"><![CDATA[<p>&emsp;&emsp;Git是一个2005年诞生的开源分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。Git 与常用的版本控制工具 CVS, Subversion 等不同，它采用了分布式版本库的方式，不必服务器端软件支持。<br><a id="more"></a></p>
+]]></content>
+      
+        <categories>
+            
+            <category> Tech </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> GitHub </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Hexo你的博客]]></title>
       <url>/2017/07/27/Hexo/</url>
-      <content type="html"><![CDATA[<p>Hexo是台湾大学生<a href="https://twitter.com/tommy351" target="_blank" rel="external">Tommy351</a>(有墙)的杰作,是一个基于Node.js的静态博客程序。Hexo生成的静态网页可以直接放到GitHub Pages、BAR、SAE等平台上。<br><a id="more"></a></p>
+      <content type="html"><![CDATA[<p>&emsp;&emsp;Hexo是台湾大学生<a href="https://twitter.com/tommy351" target="_blank" rel="external">Tommy351</a>(Be careful with the wall)的杰作,是一个基于Node.js的静态博客程序。Hexo生成的静态网页可以直接放到GitHub Pages、BAR、SAE等平台上。<br><a id="more"></a></p>
 <style>
     .imgdiv{display: flex;}
     .githubnew{margin-top: 100px;}
 </style>
 
-<h3 id="预读"><a href="#预读" class="headerlink" title="预读"></a>预读</h3><p>&emsp;&emsp;搭建个人博客的方式有很多种，如WordPress、Jekyll、Octopress和Hexo等。Hexo是一个不错的选择，简易方便(但不简单)，搭配GitHub，锦上添花。Hexo是台湾大学生<a href="https://twitter.com/tommy351" target="_blank" rel="external">Tommy351</a>(有墙)的杰作,是一个基于Node.js的静态博客程序。Hexo生成的静态网页可以直接放到GitHub Pages、BAR、SAE等平台上。</p>
+<h3 id="预读"><a href="#预读" class="headerlink" title="预读"></a>预读</h3><p>&emsp;&emsp;搭建个人博客的方式有很多种，如WordPress、Jekyll、Octopress和Hexo等。Hexo是一个不错的选择，简易方便(但不简单)，搭配GitHub，锦上添花。Hexo是台湾大学生<a href="https://twitter.com/tommy351" target="_blank" rel="external">Tommy351</a>(Be careful with the Wall)的杰作,是一个基于Node.js的静态博客程序。Hexo生成的静态网页可以直接放到GitHub Pages、BAR、SAE等平台上。</p>
 <h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><h4 id="👉安装Node"><a href="#👉安装Node" class="headerlink" title="👉安装Node"></a>👉安装Node</h4><p>&emsp;&emsp;到<a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js官网</a>下载相应平台的最新版本，或者到<a href="http://nodejs.cn/download/" target="_blank" rel="external">Node.js中文网</a>下载相应版本，具体安装一路next即可。安装Node是用来生成静态页面的。</p>
-<h4 id="👉安装Git"><a href="#👉安装Git" class="headerlink" title="👉安装Git"></a>👉安装Git</h4><p>&emsp;&emsp;<a href="https://git-scm.com/download" target="_blank" rel="external">Git官网</a>下载Windows 的<a href="https://git-scm.com/download/win" target="_blank" rel="external">32位</a>版本或者是<a href="https://git-scm.com/download/win" target="_blank" rel="external">64位</a>版本,点开Windows下载默认下载64位版本。不过本人测试发现有时很慢，另推荐一个GitHub的下载<a href="https://git-for-windows.github.io/" target="_blank" rel="external">链接</a>。Git是为了把本地的Hexo内容Push到GitHub上去。具体请参考<a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰Git</a>或本人的<a href="">Git安装与使用</a>。</p>
+<h4 id="👉安装Git"><a href="#👉安装Git" class="headerlink" title="👉安装Git"></a>👉安装Git</h4><p>&emsp;&emsp;<a href="https://git-scm.com/download" target="_blank" rel="external">Git官网</a>下载Windows 的<a href="https://git-scm.com/download/win" target="_blank" rel="external">32位</a>版本或者是<a href="https://git-scm.com/download/win" target="_blank" rel="external">64位</a>版本,点开Windows下载默认下载64位版本。不过本人测试发现有时很慢，另推荐一个GitHub的下载<a href="https://git-for-windows.github.io/" target="_blank" rel="external">链接</a>。Git是为了把本地的Hexo内容Push到GitHub上去。具体请参考<a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰Git</a>或<a href="">Git安装与使用</a>。</p>
 <h4 id="👉注册GitHub"><a href="#👉注册GitHub" class="headerlink" title="👉注册GitHub"></a>👉注册GitHub</h4><p>&emsp;&emsp;打开<a href="https://github.com/" target="_blank" rel="external">GitHub官网</a>点击注册。登陆之后新建一个与你用户名对应的Repository，并且命名为：yourusername.github.io。然后给你的GitHub账户<a href="">添加SSH Key</a>，也就是添加你的公钥，至于什么是<a href="http://www.williamlong.info/archives/837.html" target="_blank" rel="external"><strong>公私钥</strong></a>这涉及到密码学的一些知识。如果不会添加SSH Key前面有添加SSH Key的链接，实在不济，可以不添加，改用HTTPS协议来Push你的Hexo内容，后文会讲到如何HTTPS来Push的设置方法。</p>
 <div class="imgdiv"><br>    <img class="githubnew" src="/img/GitHubNew1.png" title="新建仓库"><br>    <img src="/img/GitHubNew2.png" title="命名仓库"><br></div>
 
@@ -27,7 +50,7 @@
 <p>&emsp;&emsp;填写完成之后输入如下命令，之后再Push至GitHub上，部署成功后会有如下图显示。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
 <p>&emsp;&emsp;<img src="/img/HexoDeploy1.png"></p>
 <h4 id="👉撰写文章"><a href="#👉撰写文章" class="headerlink" title="👉撰写文章"></a>👉撰写文章</h4><p>&emsp;&emsp;执行 hexo new [layout] &lt;·title·&gt; 命令即可生成新的文章，layout为可选参数，默认值为post，可以通过修改 _config.yml 中的 default_layout 参数来指定默认布局。文章的默认文件格式是MarkDown格式(如：hexo.markdown/hexo.md)。这种文档写法可以参考<a href="http://www.appinn.com/markdown/" target="_blank" rel="external">MarkDown语法说明</a>。附上<a href="https://hexo.io/zh-cn/docs/writing.html" target="_blank" rel="external">Hexo写作官方文档</a>。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new HelloHexo     /* 在post目录下新建一个HelloHexo的文章 */</div></pre></td></tr></table></figure></p>
-<h3 id="个性化"><a href="#个性化" class="headerlink" title="个性化"></a>个性化</h3><h4 id="👉主题安装"><a href="#👉主题安装" class="headerlink" title="👉主题安装"></a>👉主题安装</h4><p>&emsp;&emsp;Hexo很好的一点就是提供了比较丰富的博客主题，可以通过Hexo的主题列表<a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external"> Hexo Theme </a>或者是官网比较直观的<a href="https://hexo.io/themes/" target="_blank" rel="external"> Theme </a>来获取你想要的主题，当然如果想要<strong>私人订制</strong>请移步<a href="https://hexo.io/zh-cn/docs/themes.html" target="_blank" rel="external"> Here </a>。<br>&emsp;&emsp;下载主题。在Git Bash中输入如下命令即可完成主题的下载与更新。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/MOxFIVE/hexo-theme-yelee.git themes/yelee  /* yelee可省略*/</div></pre></td></tr></table></figure></p>
+<h3 id="个性"><a href="#个性" class="headerlink" title="个性"></a>个性</h3><h4 id="👉主题安装"><a href="#👉主题安装" class="headerlink" title="👉主题安装"></a>👉主题安装</h4><p>&emsp;&emsp;Hexo很好的一点就是提供了比较丰富的博客主题，可以通过Hexo的主题列表<a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external"> Hexo Theme </a>或者是官网比较直观的<a href="https://hexo.io/themes/" target="_blank" rel="external"> Theme </a>来获取你想要的主题，当然如果想要<strong>私人订制</strong>请移步<a href="https://hexo.io/zh-cn/docs/themes.html" target="_blank" rel="external"> Here </a>。<br>&emsp;&emsp;下载主题。在Git Bash中输入如下命令即可完成主题的下载与更新。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/MOxFIVE/hexo-theme-yelee.git themes/yelee  /* yelee可省略*/</div></pre></td></tr></table></figure></p>
 <p>&emsp;&emsp;下载成功之后，打开 _config.yml 修改主题为你下载的主题<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">themes: yelee</div></pre></td></tr></table></figure></p>
 <p>&emsp;&emsp;更新主题<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd themes/yelee</div><div class="line">git pull</div></pre></td></tr></table></figure></p>
 <h4 id="👉自定义页面"><a href="#👉自定义页面" class="headerlink" title="👉自定义页面"></a>👉自定义页面</h4><p>&emsp;&emsp;执行new page 命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new page &quot;about&quot;</div></pre></td></tr></table></figure></p>
@@ -36,6 +59,11 @@
 <h4 id="👉404页面"><a href="#👉404页面" class="headerlink" title="👉404页面"></a>👉404页面</h4><p>&emsp;&emsp;使用new page 创建 404 页面,之后就会在 source\ 目录下多一个 404 文件。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new page 404</div></pre></td></tr></table></figure></p>
 <p>&emsp;&emsp;在 index.md文件中添加 permalink: /404<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">title: 404 Not Found：该页喝老人茶去了</div><div class="line">toc: false</div><div class="line">comments: false</div><div class="line">permalink: /404</div><div class="line">---</div></pre></td></tr></table></figure></p>
 <p>&emsp;&emsp;当然也可以接入一些公益的404页面：<br>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="http://www.qq.com/404/?&amp;callback=reg&amp;_=1501224374749" target="_blank" rel="external">1️⃣ 腾讯公益404</a><br>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="http://yibo.iyiyun.com/Index/web404" target="_blank" rel="external">2️⃣ 404公益_益云(公益互联网)社会创新中心</a><br>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="http://404page.missingkids.org.tw/" target="_blank" rel="external">3️⃣ 失蹤兒童少年資料管理中心404</a></p>
+<p>&emsp;&emsp;【<strong>Example</strong>】：<a href="http://localhost:4000/404/index.html" target="_blank" rel="external">404参考页面</a></p>
+<h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><h4 id="👉常用命令"><a href="#👉常用命令" class="headerlink" title="👉常用命令"></a>👉常用命令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">hexo new &quot;postName&quot;           # 新建文章</div><div class="line">hexo new page &quot;pageName&quot;      # 新建页面</div><div class="line">hexo generate                 # 生成静态页面至public目录</div><div class="line">hexo server                   # 开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）</div><div class="line">hexo deploy                   # 将.deploy目录部署到GitHub</div><div class="line">hexo clean                    # 清理文件</div></pre></td></tr></table></figure>
+<h4 id="👉命令简写"><a href="#👉命令简写" class="headerlink" title="👉命令简写"></a>👉命令简写</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">hexo new       -&gt;  hexo n</div><div class="line">hexo generate  -&gt;  hexo g</div><div class="line">hexo server    -&gt;  hexo s</div><div class="line">hexo deploy    -&gt;  hexo d</div></pre></td></tr></table></figure>
+<h4 id="👉命令组合"><a href="#👉命令组合" class="headerlink" title="👉命令组合"></a>👉命令组合</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s   # 清理、生成、启动</div><div class="line">hexo d                           # 发布，单独使用</div></pre></td></tr></table></figure>
+<h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><p>&emsp;&emsp;&emsp;👉<a href="https://hexo.io" target="_blank" rel="external">Hexo官网</a><br>&emsp;&emsp;&emsp;👉<a href="http://moxfive.coding.me/yelee/" target="_blank" rel="external">Yelee文档</a><br>&emsp;&emsp;&emsp;👉<a href="https://hexo.io/plugins/" target="_blank" rel="external">Hexo插件</a><br>&emsp;&emsp;&emsp;👉<a href="https://www.addthis.com/" target="_blank" rel="external">addthis分享自定义</a><br>&emsp;&emsp;&emsp;👉<a href="http://www.disqus.com/" target="_blank" rel="external">disqus评论添加</a><br>&emsp;PS：部分有<a href="http://wiki.mbalib.com/wiki/%E4%B8%AD%E5%9B%BD%E5%A2%99" target="_blank" rel="external">“ChineseWall”</a></p>
 ]]></content>
       
         <categories>
@@ -58,7 +86,7 @@
     <entry>
       <title><![CDATA[Nginx简易配置(Windows)]]></title>
       <url>/2017/07/27/Nginx/</url>
-      <content type="html"><![CDATA[<p><a href="http://nginx.org" target="_blank" rel="external"><strong>Nginx(engine x) </strong></a>是一个高性能的HTTP和反向代理服务器，也是一个IMAP/POP3/SMTP服务器。<a href="https://github.com/nginx/nginx.git" target="_blank" rel="external">这里</a>是Nginx在GitHub上的源码。Nginx的功能很强大，不仅可以作为静态HTTP服务器、反向代理服务器还可以做负载均衡、虚拟主机和<a href="https://baike.baidu.com/item/fastcgi/10880685?fr=aladdin" target="_blank" rel="external"> FastCGI</a>。本文记录的是简单<strong><strong>静态HTTP服务器</strong></strong>的配置。<br><a id="more"></a></p>
+      <content type="html"><![CDATA[<p>&emsp;&emsp;<a href="http://nginx.org" target="_blank" rel="external"><strong>Nginx(engine x) </strong></a>是一个高性能的HTTP和反向代理服务器，也是一个IMAP/POP3/SMTP服务器。<a href="https://github.com/nginx/nginx.git" target="_blank" rel="external">这里</a>是Nginx在GitHub上的源码。Nginx的功能很强大，不仅可以作为静态HTTP服务器、反向代理服务器还可以做负载均衡、虚拟主机和<a href="https://baike.baidu.com/item/fastcgi/10880685?fr=aladdin" target="_blank" rel="external"> FastCGI</a>。本文记录的是简单<strong><strong>静态HTTP服务器</strong></strong>的配置。<br><a id="more"></a></p>
 <h3 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h3><p>&emsp;&emsp;<a href="http://nginx.org" target="_blank" rel="external"><strong>Nginx(engine x) </strong></a>是一个高性能的HTTP和反向代理服务器，也是一个IMAP/POP3/SMTP服务器。<a href="https://github.com/nginx/nginx.git" target="_blank" rel="external">这里</a>是Nginx在GitHub上的源码。Nginx的功能很强大，不仅可以作为静态HTTP服务器、反向代理服务器还可以做负载均衡、虚拟主机和<a href="https://baike.baidu.com/item/fastcgi/10880685?fr=aladdin" target="_blank" rel="external"> FastCGI</a>。本文记录的是简单<strong><strong>静态HTTP服务器</strong></strong>的配置。</p>
 <h3 id="Nginx配置-Windows"><a href="#Nginx配置-Windows" class="headerlink" title="Nginx配置(Windows)"></a>Nginx配置(Windows)</h3><p></p><h4>1.下载Nginx：</h4><br>&emsp;&emsp;选择自己需要的版本进入<a href="http://nginx.org/en/download.html" target="_blank" rel="external"><strong> 官网 </strong></a>下载Nginx。<br><img src="/img/NginxDownload.png" title="Nginx下载" style="display:inline-block;width: 50%;height: 50%;"><p></p>
 <p></p><h4>2.解压Nginx：</h4><br>&emsp;&emsp;将下载好的压缩包解压至你想存放Nginx的磁盘分区或者文件夹内。如图，我把Nignx解压到C盘的Soft文件夹内。<br><img src="/img/NginxUnzip.png" title="解压Nginx"><p></p>
@@ -104,7 +132,7 @@
     <entry>
       <title><![CDATA[致三年后的你]]></title>
       <url>/2017/07/03/Three%C2%B7Years%C2%B7Later/</url>
-      <content type="html"><![CDATA[<p>愿你走出半生，归来仍是少年。<br><a id="more"></a></p>
+      <content type="html"><![CDATA[<p>&emsp;&emsp;愿你走出半生，归来仍是少年。<br><a id="more"></a></p>
 <p>&emsp;&emsp;你好，首先恭喜你，还有几天就要毕业离校；其次祝福你，将要真正的踏入社会；去奋斗你想要的样子。</p>
 <p>&emsp;&emsp;如果你看到了，请确保你有27(这一年你27，也是你最喜欢的两个数字)分钟的时间，认真地看下去，否则请关闭，该干嘛干嘛去，改日再看。</p>
 <p>&emsp;&emsp;未来的你和现在的我都明白:时光匆匆，往日不复。看到这里你会不会想起未来三年中的我是什么样子。主宰自我拼搏奋进还是形为路人甲乙丙丁？我不知道，但是你知道。因为我不晓未来，你可通过去。但是有一点，你肯定还是喜欢<strong>《光荣》</strong>。点开听听吧。</p>
@@ -137,7 +165,7 @@
     <entry>
       <title><![CDATA[Blog First]]></title>
       <url>/2017/06/21/Blog%C2%B7First/</url>
-      <content type="html"><![CDATA[<p>第一篇博客，写了一段比较粗糙杂乱的心路历程。<br><a id="more"></a></p>
+      <content type="html"><![CDATA[<p>&emsp;&emsp;第一篇博客，写了一段比较粗糙杂乱的心路历程。<br><a id="more"></a></p>
 <h3 id="为什么"><a href="#为什么" class="headerlink" title="为什么"></a>为什么</h3><p>&emsp;&emsp;为什么？关于为什么开博客、写博客，最初只是一个突然萌生的想法。在刚去北京的第二个月，我就开始不太能适应在北京的研究生生活。感觉自己再浑浑噩噩地虚度。于是就想着干点什么，只可惜那时候想搭建一个属于自己的博客还不知道用什么方法，便改为写周记，整整的写了半年。现在还在写，只不过从周记渐变为手札。休学后开始工作，我很喜欢前端，但不局限于此。后来发现<a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> + <a href="www.github.com">GitHub</a>。于是正式开工，折腾了好久，就有了<a href="http://itruman.github.io">我的博客</a>。目前还很简陋，Bug之处还请指教。<br><i style="display:inline-block;width: 90%;height: 20em;margin: 0 5%;background:url(/img/bg01.jpg) no-repeat;background-size:cover;"></i></p>
 <h3 id="是什么"><a href="#是什么" class="headerlink" title="是什么"></a>是什么</h3><p>&emsp;&emsp;是什么？博客是什么这个概念我不是很懂，我理解的大概就是:<strong>博君笑，客来看，不足还请多指教。</strong>尽力吧，让博客有自己的影子。    </p>
 <h3 id="做什么"><a href="#做什么" class="headerlink" title="做什么"></a>做什么</h3><p>&emsp;&emsp;做什么？对，博客能做什么？简单一点，练练打字、写写感想、晒晒旅游、长长技术等等；我想这些都是博客可以做的吧，先从简单的做起，慢慢地做，渐渐地也就Better few than none !(ps:想想好久没有用!了，怀念那个用!疯狂的少年)</p>
