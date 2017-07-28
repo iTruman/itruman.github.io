@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://itruman.github.io/"/>
-  <updated>2017-07-28T08:39:52.619Z</updated>
+  <updated>2017-07-28T10:08:13.174Z</updated>
   <id>https://itruman.github.io/</id>
   
   <author>
@@ -20,9 +20,9 @@
     <link href="https://itruman.github.io/2017/07/28/Git/"/>
     <id>https://itruman.github.io/2017/07/28/Git/</id>
     <published>2017-07-28T08:27:52.000Z</published>
-    <updated>2017-07-28T08:39:52.619Z</updated>
+    <updated>2017-07-28T10:08:13.174Z</updated>
     
-    <content type="html"><![CDATA[<p>&emsp;&emsp;Git是一个2005年诞生的开源分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。Git 与常用的版本控制工具 CVS, Subversion 等不同，它采用了分布式版本库的方式，不必服务器端软件支持。<br><a id="more"></a></p>]]></content>
+    <content type="html"><![CDATA[<p>&emsp;&emsp;Git是一个2005年诞生的开源分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。Git 与常用的版本控制工具 CVS, Subversion 等不同，它采用了分布式版本库的方式，不必服务器端软件支持。<br><a id="more"></a></p><style></style><p>Git简介<br>下载安装<br>Git使用<br>    SSH  Key<br>    基本操作<br><img src="/img/GitMap.jpg"></p><p><a href="https://itruman.github.io"><strong>未完待续···</strong></a></p>]]></content>
     
     <summary type="html">
     
