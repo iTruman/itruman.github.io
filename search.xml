@@ -5,10 +5,20 @@
     <entry>
       <title><![CDATA[Git安装与使用]]></title>
       <url>/2017/07/28/Git/</url>
-      <content type="html"><![CDATA[<p>&emsp;&emsp;Git是一个2005年诞生的开源分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。Git 与常用的版本控制工具 CVS, Subversion 等不同，它采用了分布式版本库的方式，不必服务器端软件支持。<br><a id="more"></a></p>
-<style></style>
+      <content type="html"><![CDATA[<p>&emsp;&emsp;Git,一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。<br><a id="more"></a></p>
+<style>
+    .imgdiv{display: flex;}
+</style>
 
-<p>Git简介<br>下载安装<br>Git使用<br>    SSH  Key<br>    基本操作<br><img src="/img/GitMap.jpg"></p>
+<h3 id="Git简介"><a href="#Git简介" class="headerlink" title="Git简介"></a>Git简介</h3><p>&emsp;&emsp;Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。Git 与常用的版本控制工具 CVS, Subversion 等不同，它采用了分布式版本库的方式，不必服务器端软件支持。</p>
+<h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><p>&emsp;&emsp;Git 目前支持 Linux/Unix、Solaris、Mac和 Windows 平台上运行。Git 的各平台安装包下载地址为：<a href="http://git-scm.com/downloads" target="_blank" rel="external">Git下载</a>。</p>
+<h4 id="Windows平台"><a href="#Windows平台" class="headerlink" title="Windows平台"></a>Windows平台</h4><p>&emsp;&emsp;首先下载 Windows 平台下 Git 安装包，下载地址：<a href="https://git-for-windows.github.io/" target="_blank" rel="external">https://git-for-windows.github.io/</a>。下载完成后点击exe安装文件，基本上一路Next就可以。之后在菜单中心会发现 Git Bash、Git CMD 和 Git GUI 三个 Git 工具，其中 Bash 和 CMD 是常用的命令行工具，GUI 是 Git 提供的图形化工具。</p>
+<p><div class="imgdiv"><br>    <img src="/img/GitInstall.png" title="Git 安装">&gt;<br>    <img src="/img/GitMenu.png" title="Git 工具菜单"><br></div><br>安装完成后，还需要最后一步配置，在Bash中输入如下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git config --global user.name &quot;Your Name&quot;</div><div class="line">$ git config --global user.email &quot;email@example.com&quot;</div></pre></td></tr></table></figure></p>
+<p>&emsp;&emsp;由于Git是分布式版本控制系统，所以，每个机器都必须自报家门：你的名字和Email地址。你也许会担心，如果有人故意冒充别人怎么办？这个不必担心，首先我们相信大家都是善良无知的群众，其次，真的有冒充的也是有办法可查的。<br>&emsp;&emsp;注意git config命令的–global参数，用了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置，当然也可以对某个仓库指定不同的用户名和Email地址。</p>
+<h3 id="Git使用"><a href="#Git使用" class="headerlink" title="Git使用"></a>Git使用</h3><h4 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h4><p>&emsp;&emsp;选择一个合适的位置，通过 git init 命令即可简便快速的创建一个版本库(repository),<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cd test</div><div class="line">git init</div><div class="line">Initialized empty Git repository in D:/test/.git/</div></pre></td></tr></table></figure></p>
+<p>&emsp;&emsp;如上命令是在 test 目录中初始化一个 git 版本库，打开 test 文件即可发现在该文件中多了一个 .git 的文件夹(改文件为隐藏文件)，可以在文件查看中点击“显示隐藏文件”，或者直接在 Bash 中输入 ls -ah 即可看到改文件，这个目录是 git 跟踪管理版本库的，没事不能乱动。</p>
+<h4 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h4><h4 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h4><h4 id="使用GitHub"><a href="#使用GitHub" class="headerlink" title="使用GitHub"></a>使用GitHub</h4><p>&emsp;&emsp;👉<br>&emsp;&emsp;👉</p>
+<h3 id="快速入门-amp-文章推荐"><a href="#快速入门-amp-文章推荐" class="headerlink" title="快速入门&amp;文章推荐"></a>快速入门&amp;文章推荐</h3><p><img src="/img/GitMap.jpg"></p>
 <p><a href="https://itruman.github.io"><strong>未完待续···</strong></a></p>
 ]]></content>
       
