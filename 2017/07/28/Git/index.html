@@ -28,7 +28,7 @@
 <meta property="og:image" content="https://itruman.github.io/img/GitRemote.png">
 <meta property="og:image" content="https://itruman.github.io/img/GitRemote1.png">
 <meta property="og:image" content="https://itruman.github.io/img/GitMap.jpg">
-<meta property="og:updated_time" content="2017-07-31T07:50:26.060Z">
+<meta property="og:updated_time" content="2017-07-31T08:55:23.892Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git安装与使用(win)">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;Git,一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。">
@@ -156,13 +156,13 @@
                 <div class="tips-box hide">
                     <div class="tips-arrow"></div>
                     <ul class="tips-inner">
-                        <li>菜單</li>
-                        <li>標籤</li>
+                        <li>Menu</li>
+                        <li>Tags</li>
                         
-                        <li>友情鏈接</li>
+                        <li>Friends</li>
                         
                         
-                        <li>關於我</li>
+                        <li>About Me</li>
                         
                     </ul>
                 </div>
@@ -292,7 +292,7 @@
             </nav>
         </header>                
     </div>
-    <link class="menu-list" tags="標籤" friends="友情鏈接" about="關於我"/>
+    <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
       <div class="body-wrap"><article id="post-Git" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -345,9 +345,12 @@
 
 <h3 id="Git简介"><a href="#Git简介" class="headerlink" title="Git简介"></a>Git简介</h3><p>&emsp;&emsp;Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。Git 与常用的版本控制工具 CVS, Subversion 等不同，它采用了分布式版本库的方式，不必服务器端软件支持。</p>
 <h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><p>&emsp;&emsp;Git 目前支持 Linux/Unix、Solaris、Mac和 Windows 平台上运行。Git 的各平台安装包下载地址为：<a href="http://git-scm.com/downloads" target="_blank" rel="external">Git下载</a>。</p>
-<h4 id="Windows平台"><a href="#Windows平台" class="headerlink" title="Windows平台"></a>Windows平台</h4><p>&emsp;&emsp;首先下载 Windows 平台下 Git 安装包，下载地址：<a href="https://git-for-windows.github.io/" target="_blank" rel="external">https://git-for-windows.github.io/</a>。下载完成后点击exe安装文件，基本上一路Next就可以。之后在菜单中心会发现 Git Bash、Git CMD 和 Git GUI 三个 Git 工具，其中 Bash 和 CMD 是常用的命令行工具，GUI 是 Git 提供的图形化工具。</p>
+<h4 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h4><p>&emsp;&emsp;首先下载 Windows 平台下 Git 安装包，下载地址：<a href="https://git-for-windows.github.io/" target="_blank" rel="external">https://git-for-windows.github.io/</a>。下载完成后点击exe安装文件，基本上一路Next就可以。之后在菜单中心会发现 Git Bash、Git CMD 和 Git GUI 三个 Git 工具，其中 Bash 和 CMD 是常用的命令行工具，GUI 是 Git 提供的图形化工具。</p>
 <p><div class="imgdiv"><br>    <img src="/img/GitInstall.png" title="Git 安装">&gt;<br>    <img src="/img/GitMenu.png" title="Git 工具菜单"><br></div><br>安装完成后，还需要最后一步配置，在Bash中输入如下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git config --global user.name &quot;Your Name&quot;</div><div class="line">$ git config --global user.email &quot;email@example.com&quot;</div></pre></td></tr></table></figure></p>
 <p>&emsp;&emsp;由于Git是分布式版本控制系统，所以，每个机器都必须自报家门：你的名字和Email地址。你也许会担心，如果有人故意冒充别人怎么办？这个不必担心，首先我们相信大家都是善良无知的群众，其次，真的有冒充的也是有办法可查的。<br>&emsp;&emsp;注意git config命令的–global参数，用了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置，当然也可以对某个仓库指定不同的用户名和Email地址。</p>
+<h4 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h4><p>&emsp;&emsp;首先，你可以试着输入git，看看系统有没有安装Git：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ git</div><div class="line">The program &apos;git&apos; is currently not installed. You can install it by typing:</div><div class="line">sudo apt-get install git</div></pre></td></tr></table></figure></p>
+<p>&emsp;&emsp;像上面的命令，有很多Linux会友好地告诉你Git没有安装，还会告诉你如何安装Git。如果你碰巧用Debian或Ubuntu Linux，通过一条sudo apt-get install git就可以直接完成Git的安装。</p>
+<h4 id="Mac-OS-X"><a href="#Mac-OS-X" class="headerlink" title="Mac OS X"></a>Mac OS X</h4><p>&emsp;&emsp;Mac OS X 上有两种 git 安装方式：<br>&emsp;&emsp;👉 一是安装homebrew，然后通过homebrew安装Git，具体方法请参考homebrew的文档：<a href="http://brew.sh/。" target="_blank" rel="external">http://brew.sh/。</a><br>&emsp;&emsp;👉 二是直接从AppStore安装Xcode，Xcode集成了Git，不过默认没有安装，你需要运行Xcode，选择菜单“Xcode”-&gt;“Preferences”，在弹出窗口中找到“Downloads”，选择“Command Line Tools”，点“Install”就可以完成安装了。</p>
 <h3 id="Git使用"><a href="#Git使用" class="headerlink" title="Git使用"></a>Git使用</h3><h4 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h4><p>&emsp;&emsp;👉选择一个合适的位置，通过 git init 命令即可简便快速的创建一个版本库(repository),<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cd test</div><div class="line">git init</div><div class="line">Initialized empty Git repository in D:/test/.git/</div></pre></td></tr></table></figure></p>
 <p>&emsp;&emsp;如上命令是在 test 目录中初始化一个 git 版本库，打开 test 文件即可发现在该文件中多了一个 .git 的文件夹(改文件为隐藏文件)，可以在文件查看中点击“显示隐藏文件”，或者直接在 Bash 中输入 ls -ah 即可看到改文件，这个目录是 git 跟踪管理版本库的，没事不能乱动。</p>
 <h4 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">git clone         # 从远程仓库克隆项目</div><div class="line">git status        # 检查版本库状态</div><div class="line">git add folder    # 添加单个文件</div><div class="line">git add .         # 添加多个文件</div><div class="line">git commit -m &quot;description&quot;  # 快照写入缓存区，</div><div class="line">git pull          # 更新远程仓库至本地</div><div class="line">git push          # 提交修改</div><div class="line">git log           # 查看提交日志</div><div class="line">git reset --hard HEAD^  # 返回上一版本</div></pre></td></tr></table></figure>
@@ -383,17 +386,17 @@
   
     
     <div class="copyright">
-        <p><span>本文標題:</span><a href="/2017/07/28/Git/">Git安装与使用(win)</a></p>
-        <p><span>文章作者:</span><a href="/" title="回到主頁">Ta叫末生</a></p>
-        <p><span>發布時間:</span>2017-07-28, 16:27:52</p>
-        <p><span>最後更新:</span>2017-07-31, 15:50:26</p>
+        <p><span>Title:</span><a href="/2017/07/28/Git/">Git安装与使用(win)</a></p>
+        <p><span>Author:</span><a href="/" title="Back to Homepage">Ta叫末生</a></p>
+        <p><span>Created:</span>2017-07-28, 16:27:52</p>
+        <p><span>Updated:</span>2017-07-31, 16:55:23</p>
         <p>
-            <span>原始鏈接:</span><a class="post-url" href="/2017/07/28/Git/" title="Git安装与使用(win)">https://itruman.github.io/2017/07/28/Git/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://itruman.github.io/2017/07/28/Git/　　作者: Ta叫末生" title="點擊複製文章鏈接"><i class="fa fa-clipboard"></i></span>
+            <span>Full URL:</span><a class="post-url" href="/2017/07/28/Git/" title="Git安装与使用(win)">https://itruman.github.io/2017/07/28/Git/</a>
+            <span class="copy-path" data-clipboard-text="From https://itruman.github.io/2017/07/28/Git/　　By Ta叫末生" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
-            <span>許可協議:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"姓名標示-非商業性-相同方式分享 4.0 國際"</a> 轉載請保留原文鏈接及作者。
+            <span>License:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"CC BY-NC-SA 4.0"</a> Keep Link &amp; Author if Distribute.
         </p>
     </div>
 
@@ -401,10 +404,16 @@
 
     <nav id="article-nav">
         
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2017/07/31/Hexo/">
+                    Hexo你的博客
+                </a>
+            </div>
+        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2017/07/27/Hexo/">
-                    Hexo你的博客
+                <a href="/2017/07/27/Nginx/">
+                    Nginx简易配置(Windows)
                 </a>
             </div>
         
@@ -414,9 +423,9 @@
 </article>
 
     <div id="toc" class="toc-article">
-        <strong class="toc-title">文章目錄</strong>
+        <strong class="toc-title">Contents</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Git简介"><span class="toc-text">Git简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#下载安装"><span class="toc-text">下载安装</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Windows平台"><span class="toc-text">Windows平台</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Git使用"><span class="toc-text">Git使用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#创建版本库"><span class="toc-text">创建版本库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#常用命令"><span class="toc-text">常用命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#远程仓库"><span class="toc-text">远程仓库</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#👉创建SSH-Key。"><span class="toc-text">👉创建SSH Key。</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#👉GitHub添加SSH-Key"><span class="toc-text">👉GitHub添加SSH Key</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#👉添加远程仓库"><span class="toc-text">👉添加远程仓库</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#👉SSH-警告"><span class="toc-text">👉SSH 警告</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#分支管理"><span class="toc-text">分支管理</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#👉分支创建"><span class="toc-text">👉分支创建</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#👉分支合并"><span class="toc-text">👉分支合并</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#快速入门-amp-文章推荐"><span class="toc-text">快速入门&文章推荐</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Git-快速入门"><span class="toc-text">Git 快速入门</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#相关文章推荐"><span class="toc-text">相关文章推荐</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Git命令图谱"><span class="toc-text">Git命令图谱</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Git简介"><span class="toc-text">Git简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#下载安装"><span class="toc-text">下载安装</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Windows"><span class="toc-text">Windows</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Linux"><span class="toc-text">Linux</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Mac-OS-X"><span class="toc-text">Mac OS X</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Git使用"><span class="toc-text">Git使用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#创建版本库"><span class="toc-text">创建版本库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#常用命令"><span class="toc-text">常用命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#远程仓库"><span class="toc-text">远程仓库</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#👉创建SSH-Key。"><span class="toc-text">👉创建SSH Key。</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#👉GitHub添加SSH-Key"><span class="toc-text">👉GitHub添加SSH Key</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#👉添加远程仓库"><span class="toc-text">👉添加远程仓库</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#👉SSH-警告"><span class="toc-text">👉SSH 警告</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#分支管理"><span class="toc-text">分支管理</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#👉分支创建"><span class="toc-text">👉分支创建</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#👉分支合并"><span class="toc-text">👉分支合并</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#快速入门-amp-文章推荐"><span class="toc-text">快速入门&文章推荐</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Git-快速入门"><span class="toc-text">Git 快速入门</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#相关文章推荐"><span class="toc-text">相关文章推荐</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Git命令图谱"><span class="toc-text">Git命令图谱</span></a></li></ol>
         
     </div>
     <style>
@@ -430,10 +439,10 @@
         }
     </style>
 
-    <input type="button" id="tocButton" value="隱藏目錄"  title="點擊按鈕隱藏或者顯示文章目錄">
+    <input type="button" id="tocButton" value="Hide"  title="Show or Hide Table of Contents">
 
     <script>
-        yiliaConfig.toc = ["隱藏目錄", "顯示目錄", !!"false"];
+        yiliaConfig.toc = ["Hide", "Show", !!"false"];
     </script>
 
 
@@ -482,19 +491,21 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/" title="回到主頁"><i class="fa fa-home"></i></a>
+            <a href="/2017/07/31/Hexo/" title="Pre: Hexo你的博客">
+                <i class="fa fa-angle-left"></i>
+            </a>
         
 
-        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2017/07/27/Hexo/" title="下一篇: Hexo你的博客">
+            <a href="/2017/07/27/Nginx/" title="Next: Nginx简易配置(Windows)">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/07/28/Git/">Git安装与使用(win)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/07/27/Hexo/">Hexo你的博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/07/27/Nginx/">Nginx简易配置(Windows)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/07/03/Three·Years·Later/">致三年后的你</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/21/Blog·First/">Blog First</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/07/31/Hexo/">Hexo你的博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/07/28/Git/">Git安装与使用(win)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/07/27/Nginx/">Nginx简易配置(Windows)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/07/03/Three·Years·Later/">致三年后的你</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/21/Blog·First/">Blog First</a></li></ul>
 
 
 
@@ -512,14 +523,14 @@
             </div>
 
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="快速、簡潔且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="簡而不減 Hexo 雙欄博客主題  v3.5">Yelee</a> Modified by <a href="#">Truman</a> ..
+                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo  v3.5">Yelee</a> Modified by <a href="#">Truman</a> ..
             </div>
         </div>
         
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" title="本站到訪數"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        <span id="site-visit" title="Site Visitors"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
                 
@@ -528,7 +539,7 @@
                 
                 
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="本頁閱讀量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        <span id="page-visit"  title="Page Hits"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
                 
@@ -582,9 +593,9 @@ MathJax.Hub.Queue(function() {
 
 
 <div class="scroll" id="scroll">
-    <a href="#" title="返回頂部"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" onclick="load$hide();" title="查看評論"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="轉到底部"><i class="fa fa-arrow-down"></i></a>
+    <a href="#" title="Back to Top"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="Comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="Go to Bottom"><i class="fa fa-arrow-down"></i></a>
 </div>
 <script>
     // Open in New Window

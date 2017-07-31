@@ -19,7 +19,7 @@
 <meta name="keywords" content="Hexo,GitHub">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo你的博客">
-<meta property="og:url" content="https://itruman.github.io/2017/07/27/Hexo/index.html">
+<meta property="og:url" content="https://itruman.github.io/2017/07/31/Hexo/index.html">
 <meta property="og:site_name" content="末生的私博 ..">
 <meta property="og:description" content="&amp;emsp;&amp;emsp;Hexo是台湾大学生Tommy351(Be careful with the wall)的杰作,是一个基于Node.js的静态博客程序。Hexo生成的静态网页可以直接放到GitHub Pages、BAR、SAE等平台上。">
 <meta property="og:image" content="https://itruman.github.io/img/GitHubNew1.png">
@@ -28,7 +28,7 @@
 <meta property="og:image" content="https://itruman.github.io/img/HexoDeploy1.png">
 <meta property="og:image" content="https://itruman.github.io/img/AboutFix.png">
 <meta property="og:image" content="https://itruman.github.io/img/AboutFix1.png">
-<meta property="og:updated_time" content="2017-07-28T08:38:57.378Z">
+<meta property="og:updated_time" content="2017-07-31T08:56:59.167Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo你的博客">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;Hexo是台湾大学生Tommy351(Be careful with the wall)的杰作,是一个基于Node.js的静态博客程序。Hexo生成的静态网页可以直接放到GitHub Pages、BAR、SAE等平台上。">
@@ -156,13 +156,13 @@
                 <div class="tips-box hide">
                     <div class="tips-arrow"></div>
                     <ul class="tips-inner">
-                        <li>菜單</li>
-                        <li>標籤</li>
+                        <li>Menu</li>
+                        <li>Tags</li>
                         
-                        <li>友情鏈接</li>
+                        <li>Friends</li>
                         
                         
-                        <li>關於我</li>
+                        <li>About Me</li>
                         
                     </ul>
                 </div>
@@ -292,13 +292,13 @@
             </nav>
         </header>                
     </div>
-    <link class="menu-list" tags="標籤" friends="友情鏈接" about="關於我"/>
+    <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
       <div class="body-wrap"><article id="post-Hexo" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/07/27/Hexo/" class="article-date">
-      <time datetime="2017-07-27T01:15:00.000Z" itemprop="datePublished">2017-07-27</time>
+      <a href="/2017/07/31/Hexo/" class="article-date">
+      <time datetime="2017-07-31T01:15:00.000Z" itemprop="datePublished">2017-07-31</time>
 </a>
 
 
@@ -346,8 +346,8 @@
 
 <h3 id="预读"><a href="#预读" class="headerlink" title="预读"></a>预读</h3><p>&emsp;&emsp;搭建个人博客的方式有很多种，如WordPress、Jekyll、Octopress和Hexo等。Hexo是一个不错的选择，简易方便(但不简单)，搭配GitHub，锦上添花。Hexo是台湾大学生<a href="https://twitter.com/tommy351" target="_blank" rel="external">Tommy351</a>(Be careful with the Wall)的杰作,是一个基于Node.js的静态博客程序。Hexo生成的静态网页可以直接放到GitHub Pages、BAR、SAE等平台上。</p>
 <h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><h4 id="👉安装Node"><a href="#👉安装Node" class="headerlink" title="👉安装Node"></a>👉安装Node</h4><p>&emsp;&emsp;到<a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js官网</a>下载相应平台的最新版本，或者到<a href="http://nodejs.cn/download/" target="_blank" rel="external">Node.js中文网</a>下载相应版本，具体安装一路next即可。安装Node是用来生成静态页面的。</p>
-<h4 id="👉安装Git"><a href="#👉安装Git" class="headerlink" title="👉安装Git"></a>👉安装Git</h4><p>&emsp;&emsp;<a href="https://git-scm.com/download" target="_blank" rel="external">Git官网</a>下载Windows 的<a href="https://git-scm.com/download/win" target="_blank" rel="external">32位</a>版本或者是<a href="https://git-scm.com/download/win" target="_blank" rel="external">64位</a>版本,点开Windows下载默认下载64位版本。不过本人测试发现有时很慢，另推荐一个GitHub的下载<a href="https://git-for-windows.github.io/" target="_blank" rel="external">链接</a>。Git是为了把本地的Hexo内容Push到GitHub上去。具体请参考<a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰Git</a>或<a href="">Git安装与使用</a>。</p>
-<h4 id="👉注册GitHub"><a href="#👉注册GitHub" class="headerlink" title="👉注册GitHub"></a>👉注册GitHub</h4><p>&emsp;&emsp;打开<a href="https://github.com/" target="_blank" rel="external">GitHub官网</a>点击注册。登陆之后新建一个与你用户名对应的Repository，并且命名为：yourusername.github.io。然后给你的GitHub账户<a href="">添加SSH Key</a>，也就是添加你的公钥，至于什么是<a href="http://www.williamlong.info/archives/837.html" target="_blank" rel="external"><strong>公私钥</strong></a>这涉及到密码学的一些知识。如果不会添加SSH Key前面有添加SSH Key的链接，实在不济，可以不添加，改用HTTPS协议来Push你的Hexo内容，后文会讲到如何HTTPS来Push的设置方法。</p>
+<h4 id="👉安装Git"><a href="#👉安装Git" class="headerlink" title="👉安装Git"></a>👉安装Git</h4><p>&emsp;&emsp;<a href="https://git-scm.com/download" target="_blank" rel="external">Git官网</a>下载Windows 的<a href="https://git-scm.com/download/win" target="_blank" rel="external">32位</a>版本或者是<a href="https://git-scm.com/download/win" target="_blank" rel="external">64位</a>版本,点开Windows下载默认下载64位版本。不过本人测试发现有时很慢，另推荐一个GitHub的下载<a href="https://git-for-windows.github.io/" target="_blank" rel="external">链接</a>。Git是为了把本地的Hexo内容Push到GitHub上去。具体请参考<a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰Git</a>或<a href="https://itruman.github.io/2017/07/28/Git/">Git安装与使用</a>。</p>
+<h4 id="👉注册GitHub"><a href="#👉注册GitHub" class="headerlink" title="👉注册GitHub"></a>👉注册GitHub</h4><p>&emsp;&emsp;打开<a href="https://github.com/" target="_blank" rel="external">GitHub官网</a>点击注册。登陆之后新建一个与你用户名对应的Repository，并且命名为：yourusername.github.io。然后给你的GitHub账户<a href="https://itruman.github.io/2017/07/28/Git/#👉创建SSH-Key。">添加SSH Key</a>，也就是添加你的公钥，至于什么是<a href="http://www.williamlong.info/archives/837.html" target="_blank" rel="external"><strong>公私钥</strong></a>这涉及到密码学的一些知识。如果不会添加SSH Key前面有添加SSH Key的链接，实在不济，可以不添加，改用HTTPS协议来Push你的Hexo内容，后文会讲到如何HTTPS来Push的设置方法。</p>
 <div class="imgdiv"><br>    <img class="githubnew" src="/img/GitHubNew1.png" title="新建仓库"><br>    <img src="/img/GitHubNew2.png" title="命名仓库"><br></div>
 
 <h3 id="搭建"><a href="#搭建" class="headerlink" title="搭建"></a>搭建</h3><h4 id="👉Hexo安装-amp-Init"><a href="#👉Hexo安装-amp-Init" class="headerlink" title="👉Hexo安装 &amp; Init"></a>👉Hexo安装 &amp; Init</h4><p>&emsp;1.Hexo 安装<br>&emsp;&emsp;Node和Git安装完成之后，打开Git Bash,输入如下命令即可安装Hexo<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo    /*-g 表示全局安装*/</div></pre></td></tr></table></figure></p>
@@ -382,17 +382,17 @@
   
     
     <div class="copyright">
-        <p><span>本文標題:</span><a href="/2017/07/27/Hexo/">Hexo你的博客</a></p>
-        <p><span>文章作者:</span><a href="/" title="回到主頁">Ta叫末生</a></p>
-        <p><span>發布時間:</span>2017-07-27, 09:15:00</p>
-        <p><span>最後更新:</span>2017-07-28, 16:38:57</p>
+        <p><span>Title:</span><a href="/2017/07/31/Hexo/">Hexo你的博客</a></p>
+        <p><span>Author:</span><a href="/" title="Back to Homepage">Ta叫末生</a></p>
+        <p><span>Created:</span>2017-07-31, 09:15:00</p>
+        <p><span>Updated:</span>2017-07-31, 16:56:59</p>
         <p>
-            <span>原始鏈接:</span><a class="post-url" href="/2017/07/27/Hexo/" title="Hexo你的博客">https://itruman.github.io/2017/07/27/Hexo/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://itruman.github.io/2017/07/27/Hexo/　　作者: Ta叫末生" title="點擊複製文章鏈接"><i class="fa fa-clipboard"></i></span>
+            <span>Full URL:</span><a class="post-url" href="/2017/07/31/Hexo/" title="Hexo你的博客">https://itruman.github.io/2017/07/31/Hexo/</a>
+            <span class="copy-path" data-clipboard-text="From https://itruman.github.io/2017/07/31/Hexo/　　By Ta叫末生" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
-            <span>許可協議:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"姓名標示-非商業性-相同方式分享 4.0 國際"</a> 轉載請保留原文鏈接及作者。
+            <span>License:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"CC BY-NC-SA 4.0"</a> Keep Link &amp; Author if Distribute.
         </p>
     </div>
 
@@ -400,16 +400,10 @@
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2017/07/28/Git/">
-                    Git安装与使用(win)
-                </a>
-            </div>
-        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2017/07/27/Nginx/">
-                    Nginx简易配置(Windows)
+                <a href="/2017/07/28/Git/">
+                    Git安装与使用(win)
                 </a>
             </div>
         
@@ -419,7 +413,7 @@
 </article>
 
     <div id="toc" class="toc-article">
-        <strong class="toc-title">文章目錄</strong>
+        <strong class="toc-title">Contents</strong>
         
             <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#预读"><span class="toc-text">预读</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#准备"><span class="toc-text">准备</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#👉安装Node"><span class="toc-text">👉安装Node</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#👉安装Git"><span class="toc-text">👉安装Git</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#👉注册GitHub"><span class="toc-text">👉注册GitHub</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#搭建"><span class="toc-text">搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#👉Hexo安装-amp-Init"><span class="toc-text">👉Hexo安装 & Init</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#👉生成、启动、部署"><span class="toc-text">👉生成、启动、部署</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#👉撰写文章"><span class="toc-text">👉撰写文章</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#个性"><span class="toc-text">个性</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#👉主题安装"><span class="toc-text">👉主题安装</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#👉自定义页面"><span class="toc-text">👉自定义页面</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#👉404页面"><span class="toc-text">👉404页面</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#命令"><span class="toc-text">命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#👉常用命令"><span class="toc-text">👉常用命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#👉命令简写"><span class="toc-text">👉命令简写</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#👉命令组合"><span class="toc-text">👉命令组合</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#链接"><span class="toc-text">链接</span></a></li></ol>
         
@@ -435,10 +429,10 @@
         }
     </style>
 
-    <input type="button" id="tocButton" value="隱藏目錄"  title="點擊按鈕隱藏或者顯示文章目錄">
+    <input type="button" id="tocButton" value="Hide"  title="Show or Hide Table of Contents">
 
     <script>
-        yiliaConfig.toc = ["隱藏目錄", "顯示目錄", !!"false"];
+        yiliaConfig.toc = ["Hide", "Show", !!"false"];
     </script>
 
 
@@ -464,8 +458,8 @@
     <div id="disqus_thread"></div>
     <script>
         var disqus_config = function(){
-            this.page.url = 'https://itruman.github.io/2017/07/27/Hexo/';
-            this.page.identifier = '2017/07/27/Hexo/';
+            this.page.url = 'https://itruman.github.io/2017/07/31/Hexo/';
+            this.page.identifier = '2017/07/31/Hexo/';
         };
         var loadComment = function(){
             var d = document, s = d.createElement('script');
@@ -487,21 +481,19 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2017/07/28/Git/" title="上一篇: Git安装与使用(win)">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="Back to Homepage"><i class="fa fa-home"></i></a>
         
 
-        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2017/07/27/Nginx/" title="下一篇: Nginx简易配置(Windows)">
+            <a href="/2017/07/28/Git/" title="Next: Git安装与使用(win)">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/07/28/Git/">Git安装与使用(win)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/07/27/Hexo/">Hexo你的博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/07/27/Nginx/">Nginx简易配置(Windows)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/07/03/Three·Years·Later/">致三年后的你</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/21/Blog·First/">Blog First</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/07/31/Hexo/">Hexo你的博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/07/28/Git/">Git安装与使用(win)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/07/27/Nginx/">Nginx简易配置(Windows)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/07/03/Three·Years·Later/">致三年后的你</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/21/Blog·First/">Blog First</a></li></ul>
 
 
 
@@ -519,14 +511,14 @@
             </div>
 
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="快速、簡潔且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="簡而不減 Hexo 雙欄博客主題  v3.5">Yelee</a> Modified by <a href="#">Truman</a> ..
+                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo  v3.5">Yelee</a> Modified by <a href="#">Truman</a> ..
             </div>
         </div>
         
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" title="本站到訪數"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        <span id="site-visit" title="Site Visitors"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
                 
@@ -535,7 +527,7 @@
                 
                 
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="本頁閱讀量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        <span id="page-visit"  title="Page Hits"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
                 
@@ -589,9 +581,9 @@ MathJax.Hub.Queue(function() {
 
 
 <div class="scroll" id="scroll">
-    <a href="#" title="返回頂部"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" onclick="load$hide();" title="查看評論"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="轉到底部"><i class="fa fa-arrow-down"></i></a>
+    <a href="#" title="Back to Top"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="Comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="Go to Bottom"><i class="fa fa-arrow-down"></i></a>
 </div>
 <script>
     // Open in New Window
