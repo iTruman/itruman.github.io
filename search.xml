@@ -3,6 +3,15 @@
   
     
     <entry>
+      <title><![CDATA[next]]></title>
+      <url>/2017/08/01/next/</url>
+      <content type="html"><![CDATA[<p>This is the next one blog, Please wait ..<br><a id="more"></a></p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Hexo你的博客]]></title>
       <url>/2017/07/31/Hexo/</url>
       <content type="html"><![CDATA[<p>&emsp;&emsp;Hexo是台湾大学生<a href="https://twitter.com/tommy351" target="_blank" rel="external">Tommy351</a>(Be careful with the wall)的杰作,是一个基于Node.js的静态博客程序。Hexo生成的静态网页可以直接放到GitHub Pages、BAR、SAE等平台上。<br><a id="more"></a></p>
