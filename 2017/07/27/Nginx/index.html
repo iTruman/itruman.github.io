@@ -105,6 +105,13 @@
   <div id="container">
     <div class="left-col">
     <div class="intrude-less">
+    <div id="wmusic">
+        <div class="wleft">
+            <iframe frameborder="no" marginwidth="0" marginheight="0" width=103% src="//music.163.com/outchain/player?type=0&id=706249268&auto=0&height=330"></iframe>
+        </div>
+        <div class="wright">HIDE</div>
+    </div>
+
     <header id="header" class="inner">
         <a href="/" class="profilepic">
             <img src="/img/niconico.png" class="animated zoomIn">
@@ -241,12 +248,19 @@
                 
             </div>
         </div>
-        <div id="music" style="margin: -55px -10px 0 -10px;">
-            <iframe frameborder="no" marginwidth="0" marginheight="0" width=100% height=360 src="//music.163.com/outchain/player?type=0&id=706249268&auto=0&height=330">
-            </iframe>
-        </div>
     </header>                
 </div>
+
+<script>
+    // show & hide music
+        $('#wmusic').off().on('click',function () {
+           $(this).css(
+                {
+                    'transform' : 'translateX(-270px)'
+                }
+            )
+        })
+</script>
     </div>
     <div class="mid-col">
       <nav id="mobile-nav">
@@ -346,7 +360,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>&emsp;&emsp;<a href="http://nginx.org" target="_blank" rel="external"><strong>Nginx(engine x) </strong></a>是一个高性能的HTTP和反向代理服务器，也是一个IMAP/POP3/SMTP服务器。<a href="https://github.com/nginx/nginx.git" target="_blank" rel="external">这里</a>是Nginx在GitHub上的源码。Nginx的功能很强大，不仅可以作为静态HTTP服务器、反向代理服务器还可以做负载均衡、虚拟主机和<a href="https://baike.baidu.com/item/fastcgi/10880685?fr=aladdin" target="_blank" rel="external"> FastCGI</a>。本文记录的是简单<strong><strong>静态HTTP服务器</strong></strong>的配置。<br><a id="more"></a></p>
+        <script src="/assets/js/APlayer.min.js"> </script><p>&emsp;&emsp;<a href="http://nginx.org" target="_blank" rel="external"><strong>Nginx(engine x) </strong></a>是一个高性能的HTTP和反向代理服务器，也是一个IMAP/POP3/SMTP服务器。<a href="https://github.com/nginx/nginx.git" target="_blank" rel="external">这里</a>是Nginx在GitHub上的源码。Nginx的功能很强大，不仅可以作为静态HTTP服务器、反向代理服务器还可以做负载均衡、虚拟主机和<a href="https://baike.baidu.com/item/fastcgi/10880685?fr=aladdin" target="_blank" rel="external"> FastCGI</a>。本文记录的是简单<strong><strong>静态HTTP服务器</strong></strong>的配置。<br><a id="more"></a></p>
 <h3 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h3><p>&emsp;&emsp;<a href="http://nginx.org" target="_blank" rel="external"><strong>Nginx(engine x) </strong></a>是一个高性能的HTTP和反向代理服务器，也是一个IMAP/POP3/SMTP服务器。<a href="https://github.com/nginx/nginx.git" target="_blank" rel="external">这里</a>是Nginx在GitHub上的源码。Nginx的功能很强大，不仅可以作为静态HTTP服务器、反向代理服务器还可以做负载均衡、虚拟主机和<a href="https://baike.baidu.com/item/fastcgi/10880685?fr=aladdin" target="_blank" rel="external"> FastCGI</a>。本文记录的是简单<strong><strong>静态HTTP服务器</strong></strong>的配置。</p>
 <h3 id="Nginx配置-Windows"><a href="#Nginx配置-Windows" class="headerlink" title="Nginx配置(Windows)"></a>Nginx配置(Windows)</h3><p></p><h4>1.下载Nginx：</h4><br>&emsp;&emsp;选择自己需要的版本进入<a href="http://nginx.org/en/download.html" target="_blank" rel="external"><strong> 官网 </strong></a>下载Nginx。<br><img src="/img/NginxDownload.png" title="Nginx下载" style="display:inline-block;width: 50%;height: 50%;"><p></p>
 <p></p><h4>2.解压Nginx：</h4><br>&emsp;&emsp;将下载好的压缩包解压至你想存放Nginx的磁盘分区或者文件夹内。如图，我把Nignx解压到C盘的Soft文件夹内。<br><img src="/img/NginxUnzip.png" title="解压Nginx"><p></p>

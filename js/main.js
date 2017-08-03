@@ -199,6 +199,5 @@ require([], function (){
                 update(string[0], "");
             }
         }
-    })
-
+    }) 
 })

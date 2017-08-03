@@ -15,16 +15,16 @@
 
 
 
-<meta name="description" content="说说末生 	 		*{margin: 0 auto;padding: 0;} 		body{background: url(images/bg.jpg) no-repeat; background-size: cover;background-attachment: fixed;} 		#text{text-indent: 2em;overflow: hidden;} 		p:last">
+<meta name="description" content="说说末生 	 		*{margin: 0 auto;padding: 0;} 		body{background: url(images/bg.jpg) no-repeat; background-size: cover;background-attachment: fixed;} 		#text{text-indent: 2em;overflow: hidden;} 		p:las">
 <meta property="og:type" content="website">
 <meta property="og:title" content="末生的私博 ..">
 <meta property="og:url" content="https://itruman.github.io/About·Me/index.html">
 <meta property="og:site_name" content="末生的私博 ..">
-<meta property="og:description" content="说说末生 	 		*{margin: 0 auto;padding: 0;} 		body{background: url(images/bg.jpg) no-repeat; background-size: cover;background-attachment: fixed;} 		#text{text-indent: 2em;overflow: hidden;} 		p:last">
+<meta property="og:description" content="说说末生 	 		*{margin: 0 auto;padding: 0;} 		body{background: url(images/bg.jpg) no-repeat; background-size: cover;background-attachment: fixed;} 		#text{text-indent: 2em;overflow: hidden;} 		p:las">
 <meta property="og:updated_time" content="2017-06-15T08:35:51.236Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="末生的私博 ..">
-<meta name="twitter:description" content="说说末生 	 		*{margin: 0 auto;padding: 0;} 		body{background: url(images/bg.jpg) no-repeat; background-size: cover;background-attachment: fixed;} 		#text{text-indent: 2em;overflow: hidden;} 		p:last">
+<meta name="twitter:description" content="说说末生 	 		*{margin: 0 auto;padding: 0;} 		body{background: url(images/bg.jpg) no-repeat; background-size: cover;background-attachment: fixed;} 		#text{text-indent: 2em;overflow: hidden;} 		p:las">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -97,6 +97,13 @@
   <div id="container">
     <div class="left-col">
     <div class="intrude-less">
+    <div id="wmusic">
+        <div class="wleft">
+            <iframe frameborder="no" marginwidth="0" marginheight="0" width=103% src="//music.163.com/outchain/player?type=0&id=706249268&auto=0&height=330"></iframe>
+        </div>
+        <div class="wright">HIDE</div>
+    </div>
+
     <header id="header" class="inner">
         <a href="/" class="profilepic">
             <img src="/img/niconico.png" class="animated zoomIn">
@@ -233,12 +240,19 @@
                 
             </div>
         </div>
-        <div id="music" style="margin: -55px -10px 0 -10px;">
-            <iframe frameborder="no" marginwidth="0" marginheight="0" width=100% height=360 src="//music.163.com/outchain/player?type=0&id=706249268&auto=0&height=330">
-            </iframe>
-        </div>
     </header>                
 </div>
+
+<script>
+    // show & hide music
+        $('#wmusic').off().on('click',function () {
+           $(this).css(
+                {
+                    'transform' : 'translateX(-270px)'
+                }
+            )
+        })
+</script>
     </div>
     <div class="mid-col">
       <nav id="mobile-nav">
@@ -331,7 +345,7 @@
 
 
           
-        <!DOCTYPE html>
+        <script src="/assets/js/APlayer.min.js"> </script><!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">

@@ -98,6 +98,13 @@
   <div id="container">
     <div class="left-col">
     <div class="intrude-less">
+    <div id="wmusic">
+        <div class="wleft">
+            <iframe frameborder="no" marginwidth="0" marginheight="0" width=103% src="//music.163.com/outchain/player?type=0&id=706249268&auto=0&height=330"></iframe>
+        </div>
+        <div class="wright">HIDE</div>
+    </div>
+
     <header id="header" class="inner">
         <a href="/" class="profilepic">
             <img src="/img/niconico.png" class="animated zoomIn">
@@ -234,12 +241,19 @@
                 
             </div>
         </div>
-        <div id="music" style="margin: -55px -10px 0 -10px;">
-            <iframe frameborder="no" marginwidth="0" marginheight="0" width=100% height=360 src="//music.163.com/outchain/player?type=0&id=706249268&auto=0&height=330">
-            </iframe>
-        </div>
     </header>                
 </div>
+
+<script>
+    // show & hide music
+        $('#wmusic').off().on('click',function () {
+           $(this).css(
+                {
+                    'transform' : 'translateX(-270px)'
+                }
+            )
+        })
+</script>
     </div>
     <div class="mid-col">
       <nav id="mobile-nav">
@@ -339,7 +353,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>&emsp;&emsp;愿你走出半生，归来仍是少年。<br><a id="more"></a></p>
+        <script src="/assets/js/APlayer.min.js"> </script><p>&emsp;&emsp;愿你走出半生，归来仍是少年。<br><a id="more"></a></p>
 <p>&emsp;&emsp;你好，首先恭喜你，还有几天就要毕业离校；其次祝福你，将要真正的踏入社会；去奋斗你想要的样子。</p>
 <p>&emsp;&emsp;如果你看到了，请确保你有27(这一年你27，也是你最喜欢的两个数字)分钟的时间，认真地看下去，否则请关闭，该干嘛干嘛去，改日再看。</p>
 <p>&emsp;&emsp;未来的你和现在的我都明白:时光匆匆，往日不复。看到这里你会不会想起未来三年中的我是什么样子。主宰自我拼搏奋进还是形为路人甲乙丙丁？我不知道，但是你知道。因为我不晓未来，你可通过去。但是有一点，你肯定还是喜欢<strong>《光荣》</strong>。点开听听吧。</p>

@@ -554,6 +554,30 @@ a {
   -ms-transition: 0.3s;
   transition: 0.3s;
 }
+#wmusic {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  margin: -55px -10px 0 -25px;
+}
+#wmusic .wleft {
+  -webkit-box-flex: 9;
+  -moz-box-flex: 9;
+  box-flex: 9;
+  -webkit-flex: 9;
+  -ms-flex: 9;
+  flex: 9;
+}
+#wmusic .wright {
+  display: inline-block;
+  margin-top: 10px;
+  height: 132px;
+  width: 10px;
+  background-color: #000;
+}
 #header {
   width: 100%;
 }
@@ -568,8 +592,8 @@ a {
   display: block;
   border: 1px dashed #ccc;
   border-radius: 50%;
-  width: 128px;
-  height: 128px;
+  width: 108px;
+  height: 103px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
