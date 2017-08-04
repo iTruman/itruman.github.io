@@ -95,13 +95,24 @@
     <div class="left-col">
     <div class="intrude-less">
     <div id="wmusic">
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=300 height=86 src="//music.163.com/outchain/player?type=2&id=5249545&auto=1&height=66"></iframe>
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=300 height=86 src="//music.163.com/outchain/player?type=2&id=5249545&auto=0&height=66"></iframe>
     </div>
 
     <header id="header" class="inner">
-        <a href="/" class="profilepic">
-            <img src="/img/niconico.png" class="animated zoomIn">
-        </a>
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+                <div class="logo-front">
+                    <a href="/" class="profilepic">
+                        <img src="/img/niconico.png" class="animated zoomIn">
+                    </a>
+                </div>
+                <div class="logo-back">
+                   <a href="/" class="profilepic">
+                        <img src="/img/pro.png" class="animated zoomIn">
+                    </a>
+                </div>
+            </div>
+        </div>
         <hgroup>
           <h1 class="header-author"><a href="/">Ta叫末生</a></h1>
         </hgroup>
