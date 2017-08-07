@@ -5,9 +5,17 @@
     <entry>
       <title><![CDATA[next]]></title>
       <url>/2017/08/01/next/</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>This is the next one blog, Please wait ..<br><a id="more"></a></p>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>This is the next one blog, Please wait ..</p>
+<a id="more"></a>
+<p>&emsp;&emsp;</p>
 ]]></content>
       
+        <categories>
+            
+            <category> Whatever </category>
+            
+        </categories>
+        
         
     </entry>
     
@@ -111,7 +119,7 @@
 <h3 id="快速入门-amp-文章推荐"><a href="#快速入门-amp-文章推荐" class="headerlink" title="快速入门&amp;文章推荐"></a>快速入门&amp;文章推荐</h3><h4 id="Git-快速入门"><a href="#Git-快速入门" class="headerlink" title="Git 快速入门"></a>Git 快速入门</h4><p>&emsp;&emsp;👉<a href="http://www.runoob.com/manual/git-guide/" target="_blank" rel="external"> Git 简明指南</a><br>&emsp;&emsp;👉<a href="https://git-scm.com/docs" target="_blank" rel="external"> Git 完整命令手册</a><br>&emsp;&emsp;👉<a href="http://www.runoob.com/manual/github-git-cheat-sheet.pdf" target="_blank" rel="external"> Git PDF版命令手册</a></p>
 <h4 id="相关文章推荐"><a href="#相关文章推荐" class="headerlink" title="相关文章推荐"></a>相关文章推荐</h4><p>&emsp;&emsp;👉<a href="http://www.runoob.com/w3cnote/git-five-minutes-tutorial.html" target="_blank" rel="external"> Git 5分钟教程 </a><br>&emsp;&emsp;👉<a href="http://www.runoob.com/w3cnote/git-gui-window.html" target="_blank" rel="external"> Git GUI使用方法 </a><br>&emsp;&emsp;👉<a href="http://www.runoob.com/w3cnote/git-guide.html" target="_blank" rel="external"> GitHub 简明教程 </a><br>&emsp;&emsp;👉<a href="http://www.runoob.com/w3cnote/internet-organization-github.html" target="_blank" rel="external"> 互联网组织的未来：剖析GitHub员工的任性之源 </a></p>
 <h3 id="Git命令图谱"><a href="#Git命令图谱" class="headerlink" title="Git命令图谱"></a>Git命令图谱</h3><p><img src="/img/GitMap.jpg" title="右击下载图片本地观看"></p>
-<p><a href="https://itruman.github.io"><strong>未完待续···</strong></a></p>
+<p><strong>完结</strong></p>
 ]]></content>
       
         <categories>
